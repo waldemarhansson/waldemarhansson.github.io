@@ -9,7 +9,7 @@ const FirstVideo = ()=>{
     return(
         <div className="firstVideo">
             <p>Waldemar Hansson </p>
-<video autoPlay loop muted  src={firstVideo}></video>
+<video loop={true} muted={true} autoplay={true} playsinline={true}  src={firstVideo}></video>
         </div>
 
     )
