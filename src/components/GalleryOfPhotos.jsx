@@ -12,13 +12,17 @@ const GalleryOfPhotos =()=>{
     <img src={bild2} alt="" />
     <img src={bild3} alt="" />
     <img src={bild4} alt="" />
-    <img src={bild1} alt="" />
-    <img src={bild1} alt="" />
-    <img src={bild2} alt="" />
-    <img src={bild3} alt="" />
-    <img src={bild4} alt="" />
-    <img src={bild1} alt="" />
 
+</div>
+<div className="projects">
+    <p>memira</p>
+<img src={bild1} alt="" />
+
+    <img src={bild2} alt="" />
+    
+    <img src={bild3} alt="" />
+   
+    <img src={bild4} alt="" />
 </div>
 
 </div>

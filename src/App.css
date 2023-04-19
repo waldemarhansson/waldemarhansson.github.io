@@ -53,7 +53,6 @@ display: flex;
 flex-direction: column;
 gap: 20px;
 
-
 }
 
 #grid-container img{
@@ -62,6 +61,27 @@ gap: 20px;
 }
 
 
+.projects{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+
+}
+
+.projects p{
+  position: absolute;
+ left: 10%;
+
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.projects img{
+ width:100%;
+ height: 100%;
+ 
+ border: 3px solid white;
+
+}
 
 /*on desktop:*/
 
