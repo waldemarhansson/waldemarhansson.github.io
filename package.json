@@ -8,13 +8,17 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy" : "npm run build",
-    	"deploy" : "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "contentful": "^10.1.4",
+    "firebase": "^9.21.0",
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-scroll": "^1.8.9",
+    "strapi-provider-upload-firebase": "^0.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
