@@ -7,6 +7,18 @@ import FirstVideo from './components/FirstVideo'
 import GalleryOfPhotos from './components/GalleryOfPhotos'
 import { createClient } from 'contentful';
 import { useEffect } from 'react'
+import Carousell from './components/Carousell'
+import image1 from './assets/victor1.jpg'
+import image2 from './assets/victor2.jpg'
+import image3 from './assets/victor3.jpg'
+
+import LayingVideo from './components/LayingVideo'
+import AboutMe from './components/AboutMe'
+import Clients from './components/Clients'
+import SocialMedia from './components/SocialMedia'
+import LayingPictures from './components/LayingPictures'
+import showreel03 from './assets/kentaro.mp4'
+import StandingVideo from 'components/StandingVideo'
 
 
 function App() {
@@ -19,37 +31,14 @@ function App() {
   //spaceid:
   const spaceID = "7rhrqfmhk57q";
 
+ const images =[ image1,image2,image3]
+
+ const video ={showreel03 }
  
 
  
   
 
- 
-  /*useEffect(() => {
-    const client = createClient({
-      space: '7rhrqfmhk57q',
-      environment: 'master',
-      accessToken: 'wW8KI7bfGHi8fqt42MIhrPUchY_c3Om3ZUqorMdaUiA'
-    });
-
-    async function fetchData() {
-      const response = await client.getEntries();
-      setContent(response.items);
-      console.log(response.items);
-    }
-
-    fetchData();
-  }, []);*/
-/* {content.map((item) => (
-        <div key={item.sys.id}>
-         
-          <p>{item.fields.description}</p>
-          <img src={item.fields.bigPicture.fields.file.url}></img>
-
-        </div>
-      ))}*/
-
-  
 
 
 
@@ -57,15 +46,32 @@ function App() {
 
   return (
     <div className="App">
-     <NavigtionBar/>
-    
-     <FirstVideo/>
-     <GalleryOfPhotos/>
-    <section id="section1"><GalleryOfPhotos/> </section>
-    <section id="section2">ABOUT ME</section>
      
+   
+    <NavigtionBar/>
+      <FirstVideo/>
      
+   
  
+    <section id="section1"><Carousell images={images}/> </section>
+    <section id="section3"><LayingPictures/>
+    <LayingVideo/>
+   <StandingVideo video={video}/>
+
+   <GalleryOfPhotos/></section>
+   
+  
+    <section id='aboutme'>
+      <AboutMe/>
+    </section>
+    <section id='clients'>
+
+    <Clients/>
+     
+     
+     <SocialMedia/>
+    </section>
+   
     </div>
   )
 }

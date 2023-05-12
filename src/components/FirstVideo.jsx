@@ -1,16 +1,19 @@
 import firstVideo from "../assets/video3.mp4"
-import horisontalVideo from "../assets/video2.mp4"
+
+import victorreel from "../assets/victorreel.mp4"
+
+
 
 const FirstVideo = ()=>{
 
 
-
+//  <p>Waldemar Hansson </p>
 
 
     return(
         <div className="firstVideo">
-            <p>Waldemar Hansson </p>
-<video loop muted autoPlay playsInline  src={firstVideo}></video>
+          
+<video loop muted autoPlay playsInline  src={victorreel}></video>
         </div>
 
     )
