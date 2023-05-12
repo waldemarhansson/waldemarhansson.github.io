@@ -9,38 +9,57 @@ const Overlay = (props) =>{
         console.log("close the damn overlay");
       };
     
-const handleAboutMe = () =>{
-console.log("scroll me to info about me");
-props.setOpen(false);
 
-}
-
-const handleProjects = () =>{
-    console.log("scroll me to projects");
-    props.setOpen(false);
-
-
-
-}
 
 
     return(
         <div onClick={handleClick} className="overlay">
 
         <ul>
-            <li onClick={handleAboutMe}><Link activeClass="active"
+            <li ><Link
+            activeClass="active"
               to="section1"
               spy={true}
               smooth={true}
-              duration={500}>About me</Link></li>
+              duration={500}
+              onClick={() => {
+                props.setOpen(false);
+              }}
+              >
+            Stills</Link> </li>
 
            
             
-            <li onClick={handleProjects}><Link   activeClass="active"
-              to="section2"
+            
+
+               <li ><Link   activeClass="active"
+              to="section3"
               spy={true}
               smooth={true}
-              duration={500}>Projects</Link></li>
+              duration={500}
+              onClick={() => {
+                props.setOpen(false);
+              }}
+              >Work</Link></li>
+                <li ><Link   activeClass="active"
+              to="aboutme"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => {
+                props.setOpen(false);
+              }}
+              >contact</Link></li>
+
+<li ><Link   activeClass="active"
+              to="clients"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => {
+                props.setOpen(false);
+              }}
+              >client</Link></li>
             
         </ul>
 
