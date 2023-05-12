@@ -18,7 +18,7 @@ import Clients from './components/Clients'
 import SocialMedia from './components/SocialMedia'
 import LayingPictures from './components/LayingPictures'
 import showreel03 from './assets/kentaro.mp4'
-import StandingVideo from 'components/StandingVideo'
+
 
 
 function App() {
@@ -56,7 +56,7 @@ function App() {
     <section id="section1"><Carousell images={images}/> </section>
     <section id="section3"><LayingPictures/>
     <LayingVideo/>
-   <StandingVideo video={video}/>
+  
 
    <GalleryOfPhotos/></section>
    
