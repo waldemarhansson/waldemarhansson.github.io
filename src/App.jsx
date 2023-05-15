@@ -17,7 +17,8 @@ import AboutMe from './components/AboutMe'
 import Clients from './components/Clients'
 import SocialMedia from './components/SocialMedia'
 import LayingPictures from './components/LayingPictures'
-import showreel03 from './assets/kentaro.mp4'
+import StandingVideo from './components/StandingVideo'
+
 
 
 
@@ -33,7 +34,7 @@ function App() {
 
  const images =[ image1,image2,image3]
 
- const video ={showreel03 }
+ 
  
 
  
@@ -46,16 +47,17 @@ function App() {
 
   return (
     <div className="App">
-     
+     <section id='section0'>
    
     <NavigtionBar/>
       <FirstVideo/>
      
-   
+      </section>
  
     <section id="section1"><Carousell images={images}/> </section>
-    <section id="section3"><LayingPictures/>
+    <section id="section3">
     <LayingVideo/>
+    <StandingVideo/>
   
 
    <GalleryOfPhotos/></section>
