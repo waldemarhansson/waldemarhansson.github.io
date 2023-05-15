@@ -1,14 +1,17 @@
-const StandingVideo = ({video}) =>{
+import showreel03 from '../assets/kentaro.mp4'
 
 
-    const videoObject = Object.values(video);
+const StandingVideo = () =>{
+
+
+  
 
 
     return(
 
 
-        <div>
-            <video src={videoObject}></video>
+        <div className='standing_video_wrapper'>
+            <video loop muted autoPlay playsInline src={showreel03}></video>
         </div>
     )
 }
