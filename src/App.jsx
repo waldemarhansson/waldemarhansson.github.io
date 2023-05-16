@@ -18,6 +18,8 @@ import Clients from './components/Clients'
 import SocialMedia from './components/SocialMedia'
 import LayingPictures from './components/LayingPictures'
 import StandingVideo from './components/StandingVideo'
+import { Route, Routes, useNavigate } from 'react-router-dom';
+import SlideShowProjects from './SlideShowProjects'
 
 
 
@@ -47,6 +49,9 @@ function App() {
 
   return (
     <div className="App">
+
+      <Routes>
+      <Route path="/slideshowprojects" element={<SlideShowProjects/>}/>
      <section id='section0'>
    
     <NavigtionBar/>
@@ -54,7 +59,9 @@ function App() {
      
       </section>
  
-    <section id="section1"><Carousell images={images}/> </section>
+    <section id="section1">
+      <Carousell images={images}/> 
+      </section>
     <section id="section3">
     <LayingVideo/>
     <StandingVideo/>
@@ -73,6 +80,7 @@ function App() {
      
      <SocialMedia/>
     </section>
+    </Routes>
    
     </div>
   )
