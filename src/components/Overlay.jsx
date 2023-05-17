@@ -18,7 +18,7 @@ const Overlay = (props) =>{
         <ul>
             <li ><Link
             activeClass="active"
-              to="section1"
+              to="section0"
               spy={true}
               smooth={true}
               duration={500}
@@ -26,7 +26,7 @@ const Overlay = (props) =>{
                 props.setOpen(false);
               }}
               >
-            Stills</Link> </li>
+            Home</Link> </li>
 
            
             
@@ -41,7 +41,8 @@ const Overlay = (props) =>{
                 props.setOpen(false);
               }}
               >Work</Link></li>
-                <li ><Link   activeClass="active"
+
+<li ><Link   activeClass="active"
               to="aboutme"
               spy={true}
               smooth={true}
@@ -49,7 +50,16 @@ const Overlay = (props) =>{
               onClick={() => {
                 props.setOpen(false);
               }}
-              >contact</Link></li>
+              >About</Link></li>
+                <li ><Link   activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              onClick={() => {
+                props.setOpen(false);
+              }}
+              >Contact</Link></li>
 
 <li ><Link   activeClass="active"
               to="clients"
@@ -59,7 +69,7 @@ const Overlay = (props) =>{
               onClick={() => {
                 props.setOpen(false);
               }}
-              >client</Link></li>
+              >Clients</Link></li>
             
         </ul>
 

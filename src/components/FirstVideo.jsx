@@ -17,8 +17,10 @@ const videoUrl = "https://vimeo.com/827551777"
 
     return(
         <div className="firstVideo" >
-          <p>Waldemar Hansson <br/>
-            dop   - photographer
+          <p>VISUAL STORYTELLING <br/>
+          AND CONTENT CREATION
+          
+            
           </p>
           <video loop muted autoPlay playsInline >
         <source src={showreel01} type="video/mp4" />
