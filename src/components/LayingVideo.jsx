@@ -4,16 +4,11 @@ import { useNavigate } from 'react-router-dom';
 
 const LayingVideo = () =>{
 
-    let navigate = useNavigate()
 
-const handleVideoClick = ()=>{
-navigate('/slideshowprojects')
-
-}
 
 
     return(
-        <div className="layingvideo" onClick={handleVideoClick}>
+        <div className="layingvideo" >
             <video loop muted autoPlay playsInline  src={video2}></video>
             <video loop muted autoPlay playsInline  src={video2}></video>
             <video loop muted autoPlay playsInline  src={video2}></video>
