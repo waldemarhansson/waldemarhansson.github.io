@@ -1,22 +1,29 @@
-import firstVideo from "../assets/video3.mp4"
+import { useEffect, useState } from "react"
 
-import victorreel from "../assets/victorreel.mp4"
+
+
+
 import showreel01 from "../assets/showreel01.mp4"
 
 
 
 const FirstVideo = ()=>{
+ 
+const videoUrl = "https://vimeo.com/827551777"
 
+ 
 
-//  <p>Waldemar Hansson </p>
 
 
     return(
-        <div className="firstVideo">
+        <div className="firstVideo" >
           <p>Waldemar Hansson <br/>
             dop   - photographer
           </p>
-<video loop muted autoPlay playsInline  src={showreel01}></video>
+          <video loop muted autoPlay playsInline >
+        <source src={showreel01} type="video/mp4" />
+      </video>
+     
         </div>
 
     )

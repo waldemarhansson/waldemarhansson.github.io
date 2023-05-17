@@ -150,14 +150,23 @@ color: white;
   bottom: 0;
   background-color: rgba(246, 245, 245, 0.7);
   cursor: pointer;
+
+}
+.overlay a{
+  position: relative;
+  font-size: 70px;
+  font-weight: bolder;
 }
 
+.overlay a:hover{
+  color: black;
+}
 
 .overlay ul{
   position: absolute;
   margin: auto;
-  top: 30%;
-  left: 25%;
+  top: 20%;
+ 
   list-style: none;
   color: white;
   z-index: 99999;
@@ -166,7 +175,7 @@ color: white;
   font-size: 2rem;
   padding: 10px;
   margin-bottom: 20px;
-  align-items: center;
+ 
   
 }
  /*FirstVideo*/
