@@ -31,18 +31,17 @@ const GalleryOfPhotos = () => {
           
             </div>
             <div className="projects">
-               
+           
+
+               <video loop muted autoPlay playsInline  src={firstVideo}></video>
                <video loop muted autoPlay playsInline  src={firstVideo}></video>
                
-                <img src={bild5} alt="" />
+              
                
 
                
             </div>
-            <div className="laying-photogallery">
-              <video loop muted autoPlay playsInline src={ellineaVideo}></video>
-            </div>
-
+           
         </div>
 
     )

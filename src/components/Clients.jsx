@@ -18,7 +18,7 @@ list2.splice(shortestLength);
 
 
 <div className="client-mother-div">
-      <h3>CLIENTS</h3>
+      <h4>CLIENTS</h4>
       <div className="clients-wrapper">
         <ul className="client-list1">
           {list1.map((client, index) => (

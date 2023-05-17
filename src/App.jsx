@@ -15,6 +15,8 @@ import Clients from './components/Clients'
 import SocialMedia from './components/SocialMedia'
 import LayingPictures from './components/LayingPictures'
 import StandingVideo from './components/StandingVideo'
+import SingleLayingVideo from './components/SIngleLayingVideo'
+import Contact from './components/Contact'
 
 
 
@@ -71,19 +73,25 @@ useEffect(() => {
     <LayingVideo/>
     <StandingVideo/>
   
-
+    <SingleLayingVideo/>
    <GalleryOfPhotos/></section>
    
   
     <section id='aboutme'>
       <AboutMe/>
+
+     
+    </section>
+    <section id='contact'>
+      <Contact/>
+      <SocialMedia/>
     </section>
     <section id='clients'>
 
     <Clients/>
      
      
-     <SocialMedia/>
+    
     </section>
    
    
