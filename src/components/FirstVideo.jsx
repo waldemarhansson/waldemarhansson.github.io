@@ -1,17 +1,29 @@
 import { useEffect, useState } from "react"
+import { createClient } from 'contentful';
 
-
-
-
-import showreel01 from "../assets/showreel01.mp4"
 
 
 
 const FirstVideo = ()=>{
  
-const videoUrl = "https://vimeo.com/827551777"
-
+const [vimeoVideo,setVimeoVideo] = useState('')
  
+
+const client = createClient({
+  space: '7rhrqfmhk57q',
+  environment: 'master', 
+  accessToken: 'wW8KI7bfGHi8fqt42MIhrPUchY_c3Om3ZUqorMdaUiA'
+})
+useEffect(( ) => {
+client.getEntry('1O7F1H3DMcLLAHLCjFVL4R')
+.then((entry) =>{
+  console.log(entry.fields.vimeoUrl)
+  setVimeoVideo(entry.fields.vimeoUrl)
+
+} )
+.catch(console.error)
+},[])
+
 
 
 
@@ -22,9 +34,8 @@ const videoUrl = "https://vimeo.com/827551777"
           
             
           </p>
-          <video loop muted autoPlay playsInline >
-        <source src={showreel01} type="video/mp4" />
-      </video>
+          <video loop muted autoPlay playsInline  src={vimeoVideo}  />
+      
      
         </div>
 
