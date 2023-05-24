@@ -1,7 +1,7 @@
 import showreel03 from '../assets/kentaro.mp4'
 
 
-const StandingVideo = () =>{
+const StandingVideo = ({video}) =>{
 
 
   
@@ -11,7 +11,7 @@ const StandingVideo = () =>{
 
 
         <div className='standing_video_wrapper'>
-            <video loop muted autoPlay playsInline src={showreel03}></video>
+            <video loop muted autoPlay playsInline src={video}></video>
         </div>
     )
 }

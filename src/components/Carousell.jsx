@@ -12,6 +12,7 @@ const Carousell = ({ images }) => {
     }, [imageSources.length]);
   
     return (
+      <div className="carousell-container">
       <div className="image-slider">
         {imageSources.map((image, index) => (
           <div
@@ -21,6 +22,7 @@ const Carousell = ({ images }) => {
             <img src={image} alt={`Slide ${index}`} />
           </div>
         ))}
+      </div>
       </div>
     );
   };
