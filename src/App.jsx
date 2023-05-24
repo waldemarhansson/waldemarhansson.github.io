@@ -7,8 +7,6 @@ import GalleryOfPhotos from './components/GalleryOfPhotos'
 import { createClient } from 'contentful';
 import { useEffect } from 'react'
 import Carousell from './components/Carousell'
-
-
 import LayingVideo from './components/LayingVideo'
 import AboutMe from './components/AboutMe'
 import Clients from './components/Clients'
@@ -17,6 +15,16 @@ import LayingPictures from './components/LayingPictures'
 import StandingVideo from './components/StandingVideo'
 import SingleLayingVideo from './components/SIngleLayingVideo'
 import Contact from './components/Contact'
+import victorVideo1 from "./assets/victor1.mp4"
+import victorVideo2 from "./assets/victor2.mp4"
+import victorVideo3 from "./assets/victor3.mp4"
+import kentaro from "./assets/kentaro.mp4"
+import Biglogo from './components/Biglogo'
+import liggandevideo from './assets/video2.mp4'
+import LayingVideoWithChoise from './components/LayingVideoWithChoise'
+import imanDans from './assets/IMAN NEW WALD_02.mp4'
+import imandLeende from './assets/IMAN NEW WALD_01.mp4'
+import standingMan from './assets/video3.mp4'
 
 
 
@@ -25,13 +33,7 @@ import Contact from './components/Contact'
 
 function App() {
   const [photoslider, setPhotoslider] = useState([]);
-
-
-
-
- 
-
-
+const [isDesktop, setIsDesktop] = useState(false)
 const client = createClient({
   space: '7rhrqfmhk57q',
   environment: 'master', // defaults to 'master' if not set
@@ -47,7 +49,18 @@ useEffect(() => {
     .catch(console.error)
 }, []);
 
- 
+useEffect(() => {
+  const handleResize = () => {
+    setIsDesktop(window.innerWidth >= 768);
+  };
+
+  window.addEventListener("resize", handleResize);
+  handleResize(); // Set the initial state
+
+  return () => {
+    window.removeEventListener("resize", handleResize);
+  };
+}, []);
   
 
 
@@ -66,21 +79,49 @@ useEffect(() => {
      
       </section>
  
-    <section id="section1">
-      <Carousell images={photoslider}/> 
+      <section id="section1">
+        {isDesktop ? (
+          <div className="carousell-container">
+            <div className="carousell-wrapper">
+            <StandingVideo video={victorVideo1}/> 
+            </div>
+            <div className="carousell-wrapper">
+            <StandingVideo video={victorVideo2}/> 
+            </div>
+            <div className="carousell-wrapper">
+            <StandingVideo video={victorVideo3}/> 
+            </div>
+          </div>
+        ) : (
+          <Carousell images={photoslider} />
+        )}
       </section>
-    <section id="section3">
-    <LayingVideo/>
-    <StandingVideo/>
+   
+
+      {isDesktop ? ( <section id="section3">
+        <SingleLayingVideo/>
+        <LayingVideoWithChoise video={liggandevideo}/>
+        <LayingVideoWithChoise video={imanDans}/>
+        </section>
+      ) :(
+        <section id="section3">
+          <LayingVideoWithChoise video={liggandevideo}/>
+   <LayingVideoWithChoise video={imanDans}/>
+   <LayingVideoWithChoise video={imandLeende}/>
+   
+    <StandingVideo video={kentaro}/>
   
     <SingleLayingVideo/>
-   <GalleryOfPhotos/></section>
-   
+  <StandingVideo video={standingMan}/>
+   </section>
+   )}
   
+   
+  <Biglogo/>
     <section id='aboutme'>
       <AboutMe/>
 
-     
+      
     </section>
     <section id='contact'>
       <Contact/>

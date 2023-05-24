@@ -9,7 +9,14 @@ const Overlay = (props) =>{
         console.log("close the damn overlay");
       };
     
-
+      const getOffset = () => {
+      
+        if (window.innerWidth <= 768) {
+          return -145; // Offset for mobile view
+        } else {
+          return -270; // Default offset for other screen sizes
+        }
+      };
 
 
     return(
@@ -33,7 +40,7 @@ const Overlay = (props) =>{
             
 
                <li ><Link   activeClass="active"
-              to="section3"
+              to="section1"
               spy={true}
               smooth={true}
               duration={500}
@@ -47,6 +54,7 @@ const Overlay = (props) =>{
               spy={true}
               smooth={true}
               duration={500}
+              offset={getOffset()}
               onClick={() => {
                 props.setOpen(false);
               }}
@@ -55,6 +63,7 @@ const Overlay = (props) =>{
               to="contact"
               spy={true}
               smooth={true}
+             
               duration={500}
               onClick={() => {
                 props.setOpen(false);
