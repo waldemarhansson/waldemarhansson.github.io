@@ -6,7 +6,7 @@ const Biglogo = () =>{
 
 
 
-
+//the big logo
 
     return(
 
