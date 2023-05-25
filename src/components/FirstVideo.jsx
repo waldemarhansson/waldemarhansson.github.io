@@ -15,30 +15,23 @@ const client = createClient({
   environment: 'master', 
   accessToken: 'wW8KI7bfGHi8fqt42MIhrPUchY_c3Om3ZUqorMdaUiA'
 })
-useEffect(( ) => {
-client.getEntry('1O7F1H3DMcLLAHLCjFVL4R')
-.then((entry) =>{
-  console.log(entry.fields.vimeoUrl)
-  setVimeoVideo(entry.fields.vimeoUrl)
-  setVideoSource(entry.fields.vimeoUrl)
-
-} )
-.catch(console.error)
-},[])
-
-
-
+useEffect(() => {
+  client.getEntry('1O7F1H3DMcLLAHLCjFVL4R')
+    .then((entry) => {
+   
+      setVimeoVideo(entry.fields.vimeoUrl);
+      const initialVideoSource = window.innerWidth >= 768 ? desktopVideo : entry.fields.vimeoUrl;
+      setVideoSource(initialVideoSource);
+    })
+    .catch(console.error);
+}, []);
 
 useEffect(() => {
   const handleResize = () => {
-    if (window.innerWidth >= 768) {
-      setVideoSource(desktopVideo);
-    } else {
-      setVideoSource(vimeoVideo);
-    }
+    const newVideoSource = window.innerWidth >= 768 ? desktopVideo : vimeoVideo;
+    setVideoSource(newVideoSource);
   };
 
-  handleResize(); // Initial video source based on current screen size
   window.addEventListener("resize", handleResize);
 
   return () => {

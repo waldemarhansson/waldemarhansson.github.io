@@ -59,7 +59,7 @@ useEffect(() => {
   return () => {
     window.removeEventListener("resize", handleResize);
   };
-}, []);
+}, []);// i want to do this to check the size direclty not listen to changes.
   
 
 
