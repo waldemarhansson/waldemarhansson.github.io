@@ -2,7 +2,7 @@
   "name": "walle-walle-walle",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://gitname.github.io/projectname",
+  "homepage": "waldemarhansson.se",
   "type": "module",
   "scripts": {
     "dev": "vite",

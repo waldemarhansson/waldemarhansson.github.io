@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import './App.css'
 import NavigtionBar from './components/NavigationBar.jsx'
 import FirstVideo from './components/FirstVideo'
