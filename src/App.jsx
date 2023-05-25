@@ -23,7 +23,7 @@ import liggandevideo from './assets/video2.mp4'
 import LayingVideoWithChoise from './components/LayingVideoWithChoise'
 import imanDans from './assets/IMAN NEW WALD_02.mp4'
 import imandLeende from './assets/IMAN NEW WALD_01.mp4'
-import standingMan from './assets/video3.mp4'
+
 
 
 
@@ -111,7 +111,7 @@ useEffect(() => {
     <StandingVideo video={kentaro}/>
   
     <SingleLayingVideo/>
-  <StandingVideo video={standingMan}/>
+ 
    </section>
    )}
   
