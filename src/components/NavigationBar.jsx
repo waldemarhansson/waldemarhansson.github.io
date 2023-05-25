@@ -15,7 +15,7 @@ const NavigtionBar = () =>{
 
 const menuTap= () =>{
 setOpen(!open);
-console.log("tapped the button")
+
 }
 
 

@@ -15,7 +15,7 @@ const SingleLayingVideo = () => {
   useEffect(( ) => {
   client.getEntry('28D1StFNjU2CbqQhDK5VHR')
   .then((entry) =>{
-    console.log(entry.fields.vimeoUrl)
+    
     setVimeoVideo(entry.fields.vimeoUrl)
 
   } )

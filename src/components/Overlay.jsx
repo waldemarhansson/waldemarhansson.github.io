@@ -6,7 +6,7 @@ const Overlay = (props) =>{
 
     const handleClick = () => {
         props.setOpen(false)
-        console.log("close the damn overlay");
+       
       };
     
       const getOffset = () => {

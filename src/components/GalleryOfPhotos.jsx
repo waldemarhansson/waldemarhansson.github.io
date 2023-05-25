@@ -5,7 +5,7 @@ import bild3 from "../assets/bild3.jpg"
 import bild4 from "../assets/bild4.jpg"
 import bild5 from "../assets/WALDEMARHANSSON_07.jpg"
 import { useEffect, useState } from "react"
-import firstVideo from "../assets/video3.mp4"
+
 import ellineaVideo from "../assets/ELLINEA SHORT_03.mp4"
 
 
@@ -33,8 +33,8 @@ const GalleryOfPhotos = () => {
             <div className="projects">
            
 
-               <video loop muted autoPlay playsInline  src={firstVideo}></video>
-               <video loop muted autoPlay playsInline  src={firstVideo}></video>
+               <video loop muted autoPlay playsInline  src={ellineaVideo}></video>
+               <video loop muted autoPlay playsInline  src={ellineaVideo}></video>
                
               
                
