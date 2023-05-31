@@ -2,6 +2,10 @@ import { useEffect, useState } from "react"
 import { createClient } from 'contentful';
 import desktopVideo from "../assets/desktopshowreel.mp4"
 
+import newestreelstand from "../assets/newestreelstanding.mp4"
+import newestdesktop from "../assets/newestreel169.mp4"
+
+
 
 
 
@@ -20,15 +24,17 @@ useEffect(() => {
     .then((entry) => {
    
       setVimeoVideo(entry.fields.vimeoUrl);
-      const initialVideoSource = window.innerWidth >= 768 ? desktopVideo : entry.fields.vimeoUrl;
+      const initialVideoSource = window.innerWidth >= 768 ? newestdesktop : newestreelstand;
       setVideoSource(initialVideoSource);
     })
     .catch(console.error);
 }, []);
 
+
+
 useEffect(() => {
   const handleResize = () => {
-    const newVideoSource = window.innerWidth >= 768 ? desktopVideo : vimeoVideo;
+    const newVideoSource = window.innerWidth >= 768 ? newestdesktop : newestreelstand;
     setVideoSource(newVideoSource);
   };
 
