@@ -14,7 +14,7 @@ const AboutMe = () =>{
           
             <section>
   <div className="text-about-me">
-    <h1 className="title-text">We are specialised in visual storytelling and content creation.</h1>
+    <h1 className="title-text">We are specialized in visual storytelling and content creation.</h1>
     <div className="bread_text">
       We produce your needs and dreams.
       
