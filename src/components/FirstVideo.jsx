@@ -50,10 +50,7 @@ useEffect(() => {
 
     return(
         <div className="firstVideo" >
-          <p>VISUAL <br/> STORYTELLING <br/>
-          AND CONTENT CREATION
-          
-            
+          <p> WE 🤍 VISUAL STORYTELLING 
           </p>
           <video loop muted autoPlay playsInline  src={videoSource}  />
       
