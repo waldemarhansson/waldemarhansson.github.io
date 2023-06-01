@@ -16,17 +16,12 @@ const AboutMe = () =>{
   <div className="text-about-me">
     <h1 className="title-text">We are specialized in visual storytelling and content creation.</h1>
     <div className="bread_text">
-      We produce your needs and dreams.
-      
-      We do stills, film,
-      editing, grading, graphics, and audio. We
-      deliver your beloved project in all kinds of formats for all kinds of
-      futuristic media.
-    
-  
-      On bigger productions, we collaborate with talents we love and trust.
-      Waldemar works worldwide both as a DOP and still photographer. Located in
-      Stockholm.
+
+     We help clients to visualize their story and build engagement for their brand or product.
+      Whether you're looking to promote your brand, unveil a compelling documentary,
+       or showcase the latest trends in sports and fashion, we have the vision and skills to bring your next project to life.
+        We love visual storytelling and we are always striving to be as efficient as possible by improving the production processes.
+         Lets get to work. 
     
 
    

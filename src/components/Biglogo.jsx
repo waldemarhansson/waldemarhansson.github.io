@@ -1,4 +1,4 @@
-import w from "../assets/letter-w.png"
+import w from "../assets/LOGO_VS_black_SQ_01.png"
 
 
 

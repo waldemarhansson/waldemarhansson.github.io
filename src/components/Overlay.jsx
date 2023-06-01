@@ -12,9 +12,9 @@ const Overlay = (props) =>{
       const getOffset = () => {
       
         if (window.innerWidth <= 768) {
-          return -145; // Offset for mobile view
+          return -165; // Offset for mobile view
         } else {
-          return -270; // Default offset for other screen sizes
+          return -330; // Default offset for other screen sizes
         }
       };
 

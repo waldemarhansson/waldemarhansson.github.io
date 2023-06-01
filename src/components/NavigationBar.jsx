@@ -2,7 +2,7 @@ import { useState } from "react";
 import Overlay from "./Overlay";
 import hamburgermenu from "../assets/main-menu.png"
 import { Link } from "react-scroll";
-import w from "../assets/letter-w_ionvert.png"
+import w from "../assets/LOGO_VS_white_SQ_02.png"
 
 
 
