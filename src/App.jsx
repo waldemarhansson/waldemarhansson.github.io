@@ -40,11 +40,24 @@ import victorslide3 from "./assets/victorbild3.jpg"
 function App() {
 const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 const [videoSource, setVideoSource] = useState('');
-let victorSlide = [victorslide1,victorslide2,victorslide3];
 
 let vimeoreel916 = "https://player.vimeo.com/progressive_redirect/playback/840815073/rendition/720p/file.mp4?loc=external&log_user=0&signature=ded11233ac88cc6e7afc71ee067a156d7c92eaaee51264f57722d3c6037297c2"
 let vimeoreel169 = "https://player.vimeo.com/progressive_redirect/playback/840815583/rendition/720p/file.mp4?loc=external&log_user=0&signature=eb75fc96bcc60bba7eb08f3963451c71a9752e4f96b5d1d22ff1a28721b90c58"
 
+class ImageAndText {
+  constructor(imageUrl, name) {
+    this.name = name;
+    this.imageUrl = imageUrl;
+  }
+}
+
+
+const victorimage1 = new ImageAndText(victorslide1,"Victor Smångs")
+const victorimage2 = new ImageAndText(victorslide2,"Victor Smångs")
+const victorimage3 = new ImageAndText(victorslide3,"Victor Smångs")
+let victorSlide = [victorimage1,victorimage2,victorimage3];
+
+  
 
 useEffect(() => {
   const handleResize = () => {
