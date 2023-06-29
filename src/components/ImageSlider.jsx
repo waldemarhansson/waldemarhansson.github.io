@@ -23,7 +23,7 @@ const CustomArrowRenderer = ({ type, onClick }) => {
 
 const ImageSlider = ({images}) =>{
   
-
+/* <div className="image-text-karusell">  {image.name}</div> */
 
 
 
@@ -41,8 +41,9 @@ infiniteLoop
 autoPlay
 interval={4000}>
       {images.map((image, index) => (
-        <div key={index}>
-          <img src={image} alt={`Image ${index}`} />
+        <div className="karusell-bild" key={index}>
+          <img src={image.imageUrl} alt={`Image ${index}`} />
+        
         </div>
       ))}
     </Carousel>

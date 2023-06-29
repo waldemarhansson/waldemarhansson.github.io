@@ -50,6 +50,19 @@ body{
   right: 10px;
 }
 
+.image-text-karusell{
+position: absolute;
+bottom: 20px;
+left: 10px;
+color: white;
+font-family: 'Raleway', sans-serif;
+font-weight: lighter;
+}
+
+.karusell-bild{
+  position: relative;
+}
+
 
 /*CLIENTS*/
 
@@ -224,8 +237,10 @@ color: white;
  /*FirstVideo*/
 .firstVideo{
 margin: 0 auto;
+padding: 0;
 position: relative;
 z-index: 1;
+height: 100%;
 
 
 
@@ -246,6 +261,7 @@ text-align: center;
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  display: block;
  
 }
 
@@ -282,17 +298,19 @@ gap: 1px;
 .projects video{
   width:100%;
   height: 100%;
+  display: block;
 }
 
 .laying-photogallery video{
   width: 100%;
   height: 100%;
+  display: block;
 }
 /*Laying videi*/
 .layingvideo video{
   width: 100%;
   margin: 0 auto;
-padding: 0 auto;  
+padding: 0 auto; display: block; 
 
 }
 
@@ -354,10 +372,7 @@ padding: 0 auto;
   text-decoration: underline;
 }
 
-.about-me-wrapper{
 
-  
-}
 
 
 
