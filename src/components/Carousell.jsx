@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
 
+
+import victorbild1 from "../assets/victorbild1.jpg"
+import victorbild2 from "../assets/victorbild2.jpg"
+
 const Carousell = ({ images }) => {
     const [current, setCurrent] = useState(0);
-    const imageSources = Object.values(images);
+    const imageSources = [victorbild1,victorbild2];
   
     useEffect(() => {
       const interval = setInterval(() => {

@@ -31,6 +31,24 @@ body{
   width: 20%;
 }
 
+/*Imageslider*/
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+ 
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  /* Add more styles as desired... */
+}
+
+.custom-arrow-prev {
+  left: 10px;
+}
+
+.custom-arrow-next {
+  right: 10px;
+}
 
 
 /*CLIENTS*/
@@ -109,13 +127,13 @@ position: relative;
   height: 100%;
   width: 100%;
   position: absolute;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  
 
 }
 
 .slide.active {
-  opacity: 1;
+  opacity: 0;
 }
 
 .slide img {

@@ -23,6 +23,13 @@ import liggandevideo from './assets/video2.mp4'
 import LayingVideoWithChoise from './components/LayingVideoWithChoise'
 import imanDans from './assets/IMAN NEW WALD_02.mp4'
 import imandLeende from './assets/IMAN NEW WALD_01.mp4'
+import newestreelstand from "./assets/newestreelstanding.mp4"
+import newestdesktop from "./assets/newestreel169.mp4"
+import victorslide1 from "./assets/victorbild1.jpg"
+import victorslide2 from "./assets/victorbild2.jpg"
+import ImageSlider from './components/ImageSlider'
+import reel29juni from './assets/reel91629juni.mp4'
+import victorslide3 from "./assets/victorbild3.jpg"
 
 
 
@@ -31,36 +38,33 @@ import imandLeende from './assets/IMAN NEW WALD_01.mp4'
 
 
 function App() {
-  const [photoslider, setPhotoslider] = useState([]);
-const [isDesktop, setIsDesktop] = useState(false)
-const client = createClient({
-  space: '7rhrqfmhk57q',
-  environment: 'master', // defaults to 'master' if not set
-  accessToken: 'wW8KI7bfGHi8fqt42MIhrPUchY_c3Om3ZUqorMdaUiA'
-})
+const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+const [videoSource, setVideoSource] = useState('');
+let victorSlide = [victorslide1,victorslide2,victorslide3];
 
-useEffect(() => {
-  client.getEntry('70AvnVwxbm0JIfiElckpVH')
-    .then((entry) => {
-      const images = entry.fields.photoSliderfirstpage.map(image => image.fields.file.url);
-      setPhotoslider(images);
-    })
-    .catch(console.error)
-}, []);
+let vimeoreel916 = "https://player.vimeo.com/progressive_redirect/playback/840815073/rendition/720p/file.mp4?loc=external&log_user=0&signature=ded11233ac88cc6e7afc71ee067a156d7c92eaaee51264f57722d3c6037297c2"
+let vimeoreel169 = "https://player.vimeo.com/progressive_redirect/playback/840815583/rendition/720p/file.mp4?loc=external&log_user=0&signature=eb75fc96bcc60bba7eb08f3963451c71a9752e4f96b5d1d22ff1a28721b90c58"
+
 
 useEffect(() => {
   const handleResize = () => {
     setIsDesktop(window.innerWidth >= 768);
   };
 
+  const initialVideoSource = window.innerWidth >= 768 ? vimeoreel169 : vimeoreel916;
+  setVideoSource(initialVideoSource);
+
   window.addEventListener("resize", handleResize);
-  handleResize(); // Set the initial state
 
   return () => {
     window.removeEventListener("resize", handleResize);
   };
-}, []);// i want to do this to check the size direclty not listen to changes.
-  
+}, []);
+
+useEffect(() => {
+  const newVideoSource = isDesktop ? vimeoreel169 : vimeoreel916;
+  setVideoSource(newVideoSource);
+}, [isDesktop]);
 
 
 
@@ -74,7 +78,7 @@ useEffect(() => {
      <section id='section0'>
    
     <NavigtionBar/>
-      <FirstVideo/>
+      <FirstVideo videoSource={videoSource}/>
      
       </section>
  
@@ -92,7 +96,7 @@ useEffect(() => {
             </div>
           </div>
         ) : (
-          <Carousell images={photoslider} />
+         <div></div>
         )}
       </section>
    
@@ -104,11 +108,11 @@ useEffect(() => {
         </section>
       ) :(
         <section id="section3">
-          <LayingVideoWithChoise video={liggandevideo}/>
+          <ImageSlider images={victorSlide}/>
    <LayingVideoWithChoise video={imanDans}/>
    <LayingVideoWithChoise video={imandLeende}/>
    
-    <StandingVideo video={kentaro}/>
+   
   
     <SingleLayingVideo/>
  
