@@ -1,4 +1,4 @@
-
+import map from "../assets/map.png"
 
 const AboutMe = () =>{
 
@@ -21,11 +21,18 @@ const AboutMe = () =>{
       Whether you're looking to promote your brand, unveil a compelling documentary,
        or showcase the latest trends in sports and fashion, we have the vision and skills to bring your next project to life.
         We love visual storytelling and we are always striving to be as efficient as possible by improving the production processes.
-         Lets get to work. 
+         Let´s get to work. 
+         <br/>
+         <br/>
+      <div className="container-for-map"> <div className="located-text"> We are located in the heart of Stockholm at Linnegatan 4, Östermalm.</div>
+      
+        <img className="map" src={map} ></img></div>
+      
     
 
    
     </div>
+  
   </div>
 
   <br />

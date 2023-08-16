@@ -3,6 +3,7 @@ import Overlay from "./Overlay";
 import hamburgermenu from "../assets/main-menu.png"
 import { Link } from "react-scroll";
 import w from "../assets/LOGO_VS_white_SQ_02.png"
+import ny from "../assets/gralogga.svg"
 
 
 
@@ -30,7 +31,7 @@ return (
               duration={500}
               href="#"
             
-              ><img className="W" src={w} ></img></Link>
+              ><img className="W" src={ny} ></img></Link>
       <img onClick={menuTap} src={hamburgermenu}></img>
       
      {open? (<Overlay setOpen={setOpen} />):(<div></div>)}
