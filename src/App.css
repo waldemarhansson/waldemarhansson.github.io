@@ -3,6 +3,31 @@
   src: url('./fonts/Raleway-Regular.ttf') format('truetype');
 }
 
+/*Interactive image*/
+.image-container {
+  position: relative;
+    display: block;
+    cursor: pointer;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+}
+
+.interactive-image {
+  max-width: 100%;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.image-index {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: small;
+  background-color: transparent;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
 
 body{
  margin: 0;
@@ -115,6 +140,7 @@ font-weight: lighter;
 position: relative;
   left: 45%;
   margin-bottom: 10%;
+  margin-top: 5%;
 }
 
 .fa-instagram:hover {
@@ -204,7 +230,7 @@ color: white;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(246, 246, 245, 0.436);
+  background-color: transparent;
   cursor: pointer;
 }
 .overlay a{
@@ -320,10 +346,14 @@ padding: 0 auto; display: block;
 
 .bread_text{
   text-align: justify;
-  margin: 10%;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 10%;
+  
 }
 .contact-info{
   text-align: center;
+  
 }
 
 .title-text{
@@ -334,6 +364,11 @@ padding: 0 auto; display: block;
   margin: 10%;
 }
 
+.located-text{
+  margin-bottom: 4%;
+  text-align: left;
+}
+
 
 
 .text-about-me p {
@@ -342,8 +377,10 @@ padding: 0 auto; display: block;
 }
 
 .email {
+  margin-top: 2%;
   color: black;
-  text-decoration: underline;
+ font-size: 11px;
+ text-align: center;
 }
 
 .contact-info p {
@@ -372,7 +409,18 @@ padding: 0 auto; display: block;
   text-decoration: underline;
 }
 
+/*map*/
+.map{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+ 
+}
 
+.container-for-map{
+  text-align: center;
+
+}
 
 
 
@@ -391,6 +439,7 @@ padding: 0 auto; display: block;
 .standing_video_wrapper video{
   width: 100%;
   height: 100%;
+  display: block;
 
 }
 
@@ -492,13 +541,17 @@ color: white;
 }
 
 .bread_text{
-  margin-bottom: 4%;
+  margin-bottom: 2%;
   text-align: justify;
   /* margin: 20%; */
   margin-top: 4%;
   /*margin-left: 15%;*/
   /*margin-right: 20%;*/
  
+  font-size: 25px;
+}
+
+.located-text{
   font-size: 25px;
 }
 
@@ -533,6 +586,9 @@ color: white;
   display: inline-block;
 }
 
+.email{
+  font-size: larger;
+}
 
   }
 

@@ -1,4 +1,5 @@
 import w from "../assets/LOGO_VS_black_SQ_01.png"
+import ny from "../assets/nyloggafet.svg"
 
 
 
@@ -12,7 +13,7 @@ const Biglogo = () =>{
 
 
         <div className="big-logo-wrapper">
-            <img src={w}></img>
+            <img src={ny}></img>
 
 
         </div>

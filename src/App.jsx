@@ -30,6 +30,8 @@ import victorslide2 from "./assets/victorbild2.jpg"
 import ImageSlider from './components/ImageSlider'
 import reel29juni from './assets/reel91629juni.mp4'
 import victorslide3 from "./assets/victorbild3.jpg"
+import crawl from "./assets/crawl.mp4"
+import InteractiveImage from './components/InteractiveImage'
 
 
 
@@ -41,8 +43,8 @@ function App() {
 const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 const [videoSource, setVideoSource] = useState('');
 
-let vimeoreel916 = "https://player.vimeo.com/progressive_redirect/playback/840815073/rendition/720p/file.mp4?loc=external&log_user=0&signature=ded11233ac88cc6e7afc71ee067a156d7c92eaaee51264f57722d3c6037297c2"
-let vimeoreel169 = "https://player.vimeo.com/progressive_redirect/playback/840815583/rendition/720p/file.mp4?loc=external&log_user=0&signature=eb75fc96bcc60bba7eb08f3963451c71a9752e4f96b5d1d22ff1a28721b90c58"
+let vimeoreel916 = "https://player.vimeo.com/progressive_redirect/playback/855130465/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2b33a882698be76d4147ea69b3e6b2b2396c653f808ae4c783f643ef14bc045f"
+let vimeoreel169 = "https://player.vimeo.com/progressive_redirect/playback/855122929/rendition/1080p/file.mp4?loc=external&log_user=0&signature=0cca314496957ac5e3fb2429eb6fe0b1ad92ac2abb4a2ab48a77ca108b0f7597"
 
 class ImageAndText {
   constructor(imageUrl, name) {
@@ -102,10 +104,10 @@ useEffect(() => {
             <StandingVideo video={victorVideo1}/> 
             </div>
             <div className="carousell-wrapper">
-            <StandingVideo video={victorVideo2}/> 
+            <StandingVideo video={crawl}/> 
             </div>
             <div className="carousell-wrapper">
-            <StandingVideo video={victorVideo3}/> 
+            <StandingVideo video={victorVideo2}/> 
             </div>
           </div>
         ) : (
@@ -121,7 +123,7 @@ useEffect(() => {
         </section>
       ) :(
         <section id="section3">
-          <ImageSlider images={victorSlide}/>
+          <InteractiveImage/>
    <LayingVideoWithChoise video={imanDans}/>
    <LayingVideoWithChoise video={imandLeende}/>
    
@@ -133,14 +135,15 @@ useEffect(() => {
    )}
   
    
-  <Biglogo/>
+ 
     <section id='aboutme'>
       <AboutMe/>
+     
 
       
     </section>
     <section id='contact'>
-      <Contact/>
+     
       <SocialMedia/>
     </section>
     <section id='clients'>

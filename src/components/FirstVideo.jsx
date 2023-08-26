@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { createClient } from 'contentful';
+
 import desktopVideo from "../assets/desktopshowreel.mp4"
 
 
