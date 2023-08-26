@@ -31,6 +31,7 @@ import ImageSlider from './components/ImageSlider'
 import reel29juni from './assets/reel91629juni.mp4'
 import victorslide3 from "./assets/victorbild3.jpg"
 import crawl from "./assets/crawl.mp4"
+import InteractiveImage from './components/InteractiveImage'
 
 
 
@@ -122,7 +123,7 @@ useEffect(() => {
         </section>
       ) :(
         <section id="section3">
-          <ImageSlider images={victorSlide}/>
+          <InteractiveImage/>
    <LayingVideoWithChoise video={imanDans}/>
    <LayingVideoWithChoise video={imandLeende}/>
    
@@ -142,7 +143,7 @@ useEffect(() => {
       
     </section>
     <section id='contact'>
-      <Contact/>
+     
       <SocialMedia/>
     </section>
     <section id='clients'>
