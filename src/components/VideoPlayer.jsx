@@ -24,16 +24,11 @@ function VideoPlayer({ videoUrl, text }) {
 
     return (
         <div className="video-overlay" >
-            {showOverlay && <div className="overlay-content" >{text}</div>}
+
             <ReactPlayer
                 url={videoUrl}
                 width="100%"
                 height="100%"
-
-                onPause={onPause}
-                controls={showControls}
-                onClick={handlePlayerClick}
-                onPlay={handlePlayerClick}
                 muted={true}
             />
         </div>
