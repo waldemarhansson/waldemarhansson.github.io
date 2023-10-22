@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useRef } from 'react';
 
 function VideoPlayer({ videoUrl, text }) {
-    const [showOverlay, setShowOverlay] = useState(true);
+    const [showOverlay, setShowOverlay] = useState(false);
     const [showControls, setShowControls] = useState(false);
     const [play, setPlaying] = useState(false)
 
