@@ -2,7 +2,7 @@ import { useState } from "react";
 import victor1 from "../assets/victorbild1.jpg"
 import victor2 from "../assets/victorbild2.jpg"
 import victor3 from "../assets/victorbild3.jpg"
-import crawl from "../assets/crawl.mp4"
+
 
 
 
