@@ -29,6 +29,7 @@ function VideoPlayer({ videoUrl, text }) {
                 url={videoUrl}
                 width="100%"
                 height="100%"
+                controls={true}
                 muted={true}
             />
         </div>
