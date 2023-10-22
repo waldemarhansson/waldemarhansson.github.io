@@ -24,43 +24,62 @@ import waldemarhansson20 from "../assets/Stills/WALDEMARHANSSON_07_pkyeve.jpeg"
 import waldemarhansson21 from "../assets/Stills/WaldemarHansson_08_xwhkqg.jpeg"
 import waldemarhansson22 from "../assets/Stills/Waldemarhansson_142_q0dcbm.jpeg"
 import waldemarhansson23 from "../assets/Stills/WaldemarHansson05_fjnsbi_gcjyjz.jpeg"
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+
 
 
 const StillsGallery = () => {
 
+    const images = [
+        waldemarhansson01,
+        waldemarhansson08,
+        waldemarhansson09,
+        waldemarhansson10,
+        waldemarhansson11,
+        waldemarhansson12,
+        waldemarhansson13,
+        waldemarhansson14,
+        waldemarhansson15,
+        waldemarhansson16,
+        waldemarhansson17,
+        waldemarhansson18,
+        waldemarhansson19,
+        waldemarhansson20,
+        waldemarhansson21,
+        waldemarhansson22,
+        waldemarhansson23
+    ]
 
 
     return (
-        <div>
-            <div className="stills">
 
 
-                <img src={waldemarhansson01}></img>
-                <img src={waldemarhansson08}></img>
-                <img src={waldemarhansson09}></img>
-                <img src={waldemarhansson10}></img>
-                <img src={waldemarhansson11}></img>
-                <img src={waldemarhansson12}></img>
-                <img src={waldemarhansson13}></img>
-                <img src={waldemarhansson14}></img>
-                <img src={waldemarhansson15}></img>
-                <img src={waldemarhansson16}></img>
-                <img src={waldemarhansson17}></img>
-                <img src={waldemarhansson18}></img>
-                <img src={waldemarhansson19}></img>
-                <img src={waldemarhansson20}></img>
-                <img src={waldemarhansson21}></img>
-                <img src={waldemarhansson22}></img>
-                <img src={waldemarhansson23}></img>
+        <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
 
+            <Masonry>
+
+                {images.map((image, i) => (
+                    <img
+                        key={i}
+                        src={image}
+                        style={{
+                            width: "100%", display: "block"
+                        }}
+                        alt=""></img>
+
+                ))}
+            </Masonry>
+        </ResponsiveMasonry>
 
 
 
 
 
-            </div>
 
-        </div>
+
+
+
     )
 }
 export default StillsGallery

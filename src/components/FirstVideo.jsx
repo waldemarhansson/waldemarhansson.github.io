@@ -1,18 +1,21 @@
 import { useEffect, useState } from "react"
+import placeholderImage from "../assets/Stills/KBS_HELLO_SPRINGss_wtgh6y.jpeg"
 
 
 
 const FirstVideo = ({ videoSource }) => {
 
-  const [vimeoVideo, setVimeoVideo] = useState('')
-  const [videoSourcestate, setVideoSourcestate] = useState('')
+
+
 
 
   return (
     <div className="firstVideo" >
       <p> WE 🤍 VISUAL STORYTELLING
       </p>
-      <video loop muted autoPlay playsInline src={videoSource} />
+
+      <video className="video-element" loop muted autoPlay playsInline src={videoSource} />
+
 
 
     </div>
