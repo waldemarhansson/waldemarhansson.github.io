@@ -36,11 +36,6 @@ const StillsGallery = () => {
 
 
                 <img src={waldemarhansson01}></img>
-                <img src={waldemarhansson02}></img>
-                <img src={waldemarhansson04}></img>
-                <img src={waldemarhansson05}></img>
-                <img src={waldemarhansson06}></img>
-                <img src={waldemarhansson07}></img>
                 <img src={waldemarhansson08}></img>
                 <img src={waldemarhansson09}></img>
                 <img src={waldemarhansson10}></img>

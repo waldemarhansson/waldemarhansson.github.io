@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useRef } from 'react';
 
 function VideoPlayer({ videoUrl, text }) {
-    const [showOverlay, setShowOverlay] = useState(false);
+    const [showOverlay, setShowOverlay] = useState(true);
     const [showControls, setShowControls] = useState(false);
     const [play, setPlaying] = useState(false)
 
@@ -24,7 +24,7 @@ function VideoPlayer({ videoUrl, text }) {
     return (
         <div className="video-overlay" >
             {showOverlay && (
-                <div className="overlay-content">
+                <div className="overlay-content" onClick={handlePlayerClick}>
                     {text}
                 </div>
             )}
