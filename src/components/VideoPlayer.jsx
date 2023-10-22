@@ -34,6 +34,7 @@ function VideoPlayer({ videoUrl, text }) {
                 controls={showControls}
                 onClick={handlePlayerClick}
                 onPlay={handlePlayerClick}
+                muted={true}
             />
         </div>
     );
