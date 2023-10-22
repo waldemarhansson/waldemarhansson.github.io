@@ -10,27 +10,18 @@ function VideoPlayer({ videoUrl, text }) {
 
 
     const onPause = () => {
-        setShowOverlay(true)
         setShowControls(false)
     }
 
     const handlePlayerClick = () => {
-
-
         setShowControls(true); // Enable controls on click
-        setShowOverlay(false)
-
-
 
 
     };
 
     return (
         <div className="video-overlay" >
-            {showOverlay && (
-                <div className="overlay-content">
-                    {text}
-                </div>)}
+
 
             <ReactPlayer
                 onClick={handlePlayerClick}

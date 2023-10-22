@@ -505,6 +505,15 @@ body {
 
 @media (min-width: 640px) {
 
+
+  /*Stills*/
+  .stills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+  }
+
   /*Video gallery*/
   .videogallery-wrapper {
     display: grid;
