@@ -1,11 +1,7 @@
-import ellineaVideo from "../assets/ELLINEA SHORT_03.mp4"
-import { createClient } from 'contentful';
-import { useEffect,useState } from "react";
 
 
-const LayingVideoWithChoise = ({video}) => {
 
-  
+const LayingVideoWithChoise = ({ video }) => {
 
 
 
@@ -13,15 +9,17 @@ const LayingVideoWithChoise = ({video}) => {
 
 
 
-    return(
+
+
+    return (
 
         <div className="laying-photogallery">
 
-<video autoPlay loop muted playsInline src={video}></video>
+            <video autoPlay loop muted playsInline src={video}></video>
 
 
-        
-      </div>
+
+        </div>
     )
 }
 

@@ -3,11 +3,6 @@ import bild4 from "../assets/bild4.jpg"
 import React from "react"
 
 import waldemarhansson01 from "../assets/Stills/WaldemarHansson_11_yuuieb.jpeg"
-import waldemarhansson02 from "../assets/Stills/_Y4A4226_w8illy.jpeg"
-import waldemarhansson04 from "../assets/Stills/_Y4A7494_bndhju.jpeg"
-import waldemarhansson05 from "../assets/Stills/_Y4A5164_wrbwjf.jpeg"
-import waldemarhansson06 from "../assets/Stills/_Y4A5184_2_uq5nk1.jpeg"
-import waldemarhansson07 from "../assets/Stills/_Y4A6513_newforprint_S_S_jk8ebm.jpeg"
 import waldemarhansson08 from "../assets/Stills/ELLECOVERWALDEMAR2_wnzvqk.jpeg"
 import waldemarhansson09 from "../assets/Stills/GOTLAND_02_gccijl.jpeg"
 import waldemarhansson10 from "../assets/Stills/KBS_BLKWEEK_27090_s_yvdssq.jpeg"
@@ -24,6 +19,8 @@ import waldemarhansson20 from "../assets/Stills/WALDEMARHANSSON_07_pkyeve.jpeg"
 import waldemarhansson21 from "../assets/Stills/WaldemarHansson_08_xwhkqg.jpeg"
 import waldemarhansson22 from "../assets/Stills/Waldemarhansson_142_q0dcbm.jpeg"
 import waldemarhansson23 from "../assets/Stills/WaldemarHansson05_fjnsbi_gcjyjz.jpeg"
+import waldemarhansson24 from "../assets/Stills/waldemarhansson_20.jpg"
+import waldemarhansson25 from "../assets/Stills/waldemarhansson_31.jpg"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 
 
@@ -39,7 +36,9 @@ const StillsGallery = () => {
         waldemarhansson12,
         waldemarhansson13,
         waldemarhansson14,
+        waldemarhansson25,
         waldemarhansson15,
+        waldemarhansson24,
         waldemarhansson16,
         waldemarhansson17,
         waldemarhansson18,
@@ -48,6 +47,7 @@ const StillsGallery = () => {
         waldemarhansson21,
         waldemarhansson22,
         waldemarhansson23
+
     ]
 
 

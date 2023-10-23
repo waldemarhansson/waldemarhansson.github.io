@@ -16,7 +16,7 @@ import imanDans from './assets/IMAN NEW WALD_02.mp4'
 import imandLeende from './assets/IMAN NEW WALD_01.mp4'
 import crawl from "./assets/crawl.mp4"
 import InteractiveImage from './components/InteractiveImage'
-import { useLocation, useParams } from 'react-router-dom'
+
 
 
 function App() {

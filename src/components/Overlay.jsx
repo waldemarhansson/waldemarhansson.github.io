@@ -1,8 +1,6 @@
 
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { Link as RouterLink, useNavigate } from "react-router-dom";
-import { Navigate } from 'react-router-dom';
-import { useState } from 'react';
 
 
 
