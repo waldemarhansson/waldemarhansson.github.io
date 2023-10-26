@@ -16,11 +16,6 @@ const Overlay = (props) => {
 
   };
 
-  const menuClick = () => {
-    props.setOpen(false)
-    navigate("/")
-  }
-
   const getOffset = () => {
 
     if (window.innerWidth <= 768) {
@@ -42,7 +37,7 @@ const Overlay = (props) => {
           smooth={true}
           duration={500}
           onClick={() => {
-            menuClick();
+            handleClick("/#section0")
           }}
         >
           Home</Link> </li>
@@ -78,7 +73,7 @@ const Overlay = (props) => {
           duration={500}
           offset={getOffset()}
           onClick={() => {
-            props.setOpen(false)
+            handleClick("/#aboutme")
           }}
         >About</Link></li>
         <li ><Link activeClass="active"
@@ -88,7 +83,7 @@ const Overlay = (props) => {
 
           duration={500}
           onClick={() => {
-            props.setOpen(false);
+            handleClick("/#contact")
           }}
         >Contact</Link></li>
 
@@ -98,7 +93,7 @@ const Overlay = (props) => {
           smooth={true}
           duration={500}
           onClick={() => {
-            props.setOpen(false);
+            handleClick("/#clients")
           }}
         >Clients</Link></li>
 
