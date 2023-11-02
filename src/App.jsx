@@ -32,7 +32,7 @@ function App() {
       setIsDesktop(window.innerWidth >= 768);
     };
 
-    const initialVideoSource = window.innerWidth >= 768 ? vimeoreel169 : vimeoreel916;
+    const initialVideoSource = window.innerWidth <= 768 ? vimeoreel169 : vimeoreel916;
     setVideoSource(initialVideoSource);
 
     window.addEventListener("resize", handleResize);

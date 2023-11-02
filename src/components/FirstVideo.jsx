@@ -14,7 +14,8 @@ const FirstVideo = ({ videoSource }) => {
       <p> WE 🤍 VISUAL STORYTELLING
       </p>
 
-      <video className="video-element" loop muted autoPlay playsInline src={videoSource} />
+      <video
+        className="video-element" loop muted autoPlay playsInline src={videoSource} />
 
 
 
