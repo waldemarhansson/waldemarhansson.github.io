@@ -3,6 +3,16 @@
   src: url('./fonts/Raleway-Regular.ttf') format('truetype');
 }
 
+
+
+/*sections*/
+
+.my-section {
+  scroll-margin-block-start: 100px;
+}
+
+
+
 /*StillsGallery*/
 .stills img {
   display: block;
@@ -290,7 +300,7 @@ body {
 .overlay ul {
   position: absolute;
   margin: auto;
-  top: 20%;
+  top: 13%;
   right: 7%;
   list-style: none;
   color: rgba(255, 255, 255, 0.304);
@@ -552,7 +562,7 @@ body {
   .overlay ul {
     position: absolute;
     margin: auto;
-    top: 20%;
+    top: 13%;
     right: 5%;
     text-align: right;
 

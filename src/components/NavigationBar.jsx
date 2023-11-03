@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Overlay from "./Overlay";
 import hamburgermenu from "../assets/main-menu.png"
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import ny from "../assets/gralogga.svg"
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -21,12 +21,9 @@ const NavigtionBar = () => {
 
   return (
     <div className="navigation_bar">
-      <Link activeClass="active"
-        to="section0"
-        spy={true}
-        smooth={true}
-        duration={500}
-        href="#"
+      <Link
+        to="/#section0"
+
         onClick={logoTap}
 
       ><img className="W" src={ny} ></img></Link>

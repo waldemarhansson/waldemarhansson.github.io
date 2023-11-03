@@ -81,7 +81,7 @@ function App() {
         <LayingVideoWithChoise video={imanDans} />
       </section>
       ) : (
-        <section id="section3">
+        <section id="section4">
           <InteractiveImage />
           <LayingVideoWithChoise video={imanDans} />
           <LayingVideoWithChoise video={imandLeende} />
