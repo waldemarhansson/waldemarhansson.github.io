@@ -28,7 +28,6 @@ const FirstVideo = ({ videoSource }) => {
     <div className="firstVideo" >
       <p> WE 🤍 VISUAL STORYTELLING
       </p>
-
       <video
         poster={isDesktop ? "src/assets/armand-916_superlow.jpg" : "src/assets/armand169_suprelow.jpg"}
         className="video-element" loop muted autoPlay playsInline src={videoSource} />

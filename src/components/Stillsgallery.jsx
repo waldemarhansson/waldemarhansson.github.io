@@ -21,6 +21,10 @@ import waldemarhansson22 from "../assets/Stills/Waldemarhansson_142_q0dcbm.jpeg"
 import waldemarhansson23 from "../assets/Stills/WaldemarHansson05_fjnsbi_gcjyjz.jpeg"
 import waldemarhansson24 from "../assets/Stills/waldemarhansson_20.jpg"
 import waldemarhansson25 from "../assets/Stills/waldemarhansson_31.jpg"
+import waldemarhansson26 from "../assets/WaldemarHansson_08__2023_IHOP_s.jpg"
+import waldemarhansson27 from "../assets/WaldemarHansson_01_2023_s.jpg"
+import waldemarhansson28 from "../assets/omslagjpg2korn.jpg"
+import waldemarhansson29 from "../assets/omslagjpg3korn.jpg"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 
 
@@ -30,14 +34,18 @@ const StillsGallery = () => {
     const images = [
         waldemarhansson01,
         waldemarhansson08,
+        waldemarhansson29,
         waldemarhansson09,
+        waldemarhansson26,
         waldemarhansson10,
         waldemarhansson11,
         waldemarhansson12,
         waldemarhansson13,
+        waldemarhansson27,
         waldemarhansson14,
         waldemarhansson25,
         waldemarhansson15,
+        waldemarhansson28,
         waldemarhansson24,
         waldemarhansson16,
         waldemarhansson17,
