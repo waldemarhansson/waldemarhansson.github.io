@@ -96,7 +96,7 @@ function App() {
       </section>
       <section id='contact'>
 
-        <SocialMedia />
+
       </section>
       <section id='clients'>
 

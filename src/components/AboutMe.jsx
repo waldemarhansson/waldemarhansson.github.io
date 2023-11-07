@@ -20,16 +20,27 @@ const AboutMe = () => {
 
             We help clients to visualize their story and build engagement for their brand or product.
             Whether you're looking to promote your brand, unveil a compelling documentary,
-            or showcase the latest trends in sports and fashion, we have the vision and skills to bring your next project to life.
+            or showcase the latest trends in sports and fashion, we have the vision and skills to bring your project to life.
             We love visual storytelling and we are always striving to be as efficient as possible by improving the production processes.
+            Our Service include film  and stills  production, post production and concept developing.
             Let's get to work.
             <br />
             <br />
-            <div className="container-for-map"> <div className="located-text"> We are located in the heart of Stockholm at Linnegatan 4, Östermalm.</div>
+            <div className="container-for-map"> <div className="located-text"> We are located in the center of Stockholm at Linnegatan 4, Östermalm.</div>
 
               <img className="map" src={map} ></img></div>
-            <div className="email">Linnegatan 4 | 114 47 Stockholm | +46 707 31 37 41 <br /> hello@visualstorytelling.se</div>
 
+            <div className="emailWrapper">
+              <div className="email"> <b>Waldemar Hansson</b> <br /> +46 707 31 37 41 <br /> waldemar@visualstorytelling.se</div>
+              <div className="email"> <b>Adress</b> <br /> Linnegatan 4 <br /> 114 47 Stockholm</div>
+              <div className="social-media-wrapper">
+                <a href="https://www.instagram.com/waldemarhansson/">
+                  <i className="fab fa-instagram"></i>
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+                </a>
+
+              </div>
+            </div>
 
 
 
