@@ -56,8 +56,9 @@ function App() {
 
       </section>
 
-      <section id="section1">
-        {isDesktop ? (
+
+      {isDesktop ? (
+        <section id="section1">
           <div className="carousell-container">
             <div className="carousell-wrapper">
               <StandingVideo video={victorVideo1} />
@@ -69,10 +70,12 @@ function App() {
               <StandingVideo video={victorVideo2} />
             </div>
           </div>
-        ) : (
-          <div></div>
-        )}
+        </section>
+      ) : (<section id="section1">
+        <div></div>
       </section>
+      )}
+
 
 
       {isDesktop ? (<section id="section3">
@@ -85,15 +88,20 @@ function App() {
           <InteractiveImage />
           <LayingVideoWithChoise video={imanDans} />
           <LayingVideoWithChoise video={imandLeende} />
-          <SingleLayingVideo />
+
 
         </section>
       )}
+      {isDesktop ? (<section id='aboutme'>
+        <AboutMe />
 
-      <section id='aboutme'>
+      </section>) : (<section id='aboutme'>
+        <SingleLayingVideo />
         <AboutMe />
 
       </section>
+
+      )}
       <section id='contact'>
 
 
