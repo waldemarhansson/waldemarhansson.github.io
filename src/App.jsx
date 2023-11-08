@@ -88,7 +88,7 @@ function App() {
           <InteractiveImage />
           <LayingVideoWithChoise video={imanDans} />
           <LayingVideoWithChoise video={imandLeende} />
-
+          <SingleLayingVideo />
 
         </section>
       )}
@@ -96,7 +96,6 @@ function App() {
         <AboutMe />
 
       </section>) : (<section id='aboutme'>
-        <SingleLayingVideo />
         <AboutMe />
 
       </section>
