@@ -25,38 +25,59 @@ import waldemarhansson26 from "../assets/WaldemarHansson_08__2023_IHOP_s.jpg"
 import waldemarhansson27 from "../assets/WaldemarHansson_01_2023_s.jpg"
 import waldemarhansson28 from "../assets/omslagjpg2korn.jpg"
 import waldemarhansson29 from "../assets/omslagjpg3korn.jpg"
+import waldemarhansson30 from "../assets/nyuppdaterad.jpg"
+import waldemarhansson31 from "../assets/waldemarhansson_2023_sky.jpg"
+import waldemarhansson32 from "../components/WALDEMARHANSSON_0333.jpg"
+import waldemarhansson33 from "../assets/GWaldemarHansson_07_spread_kmxk2q.jpeg"
+import waldemarhansson34 from "../assets/WALDEMARHANSSON_0344.jpg"
+import waldemarhansson35 from "../assets/WaldemarHansson_08_xwhkqg.jpeg"
+import waldemarhansson36 from "../assets/WaldemarHansson__2023.jpg"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import waldemarhansson37 from "../assets/KENTARO_FILMSTR.jpg"
+import waldemarhansson38 from "../assets/KENTARO_waldemarHansson_01.jpg"
+import waldemarhansson39 from "../assets/WALDEMARHANSSON_01_w_ceckdd.jpeg"
 
 
 
 const StillsGallery = () => {
 
     const images = [
-        waldemarhansson01,
+        waldemarhansson30,
         waldemarhansson08,
         waldemarhansson29,
         waldemarhansson09,
         waldemarhansson26,
         waldemarhansson10,
-        waldemarhansson11,
-        waldemarhansson12,
-        waldemarhansson13,
         waldemarhansson27,
-        waldemarhansson14,
-        waldemarhansson25,
+
         waldemarhansson15,
+        waldemarhansson31,
+        waldemarhansson12,
+        waldemarhansson18,
+        waldemarhansson34,
+        waldemarhansson13,
+
+        waldemarhansson14,
+
+        waldemarhansson36,
+        waldemarhansson38,
+        waldemarhansson11,
+        waldemarhansson19,
+        waldemarhansson25,
+        waldemarhansson37,
+
         waldemarhansson28,
         waldemarhansson24,
         waldemarhansson16,
+        waldemarhansson32,
+        waldemarhansson33,
         waldemarhansson17,
-        waldemarhansson18,
-        waldemarhansson19,
-        waldemarhansson20,
-        waldemarhansson21,
-        waldemarhansson22,
-        waldemarhansson23
+
+
+        waldemarhansson20
 
     ]
+
 
 
     return (
