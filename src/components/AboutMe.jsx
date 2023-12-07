@@ -1,13 +1,6 @@
 import map from "../assets/stills/kartan_01.jpg"
 
-
 const AboutMe = () => {
-
-
-
-
-
-
 
   return (
     <div className="about-me-wrapper">
@@ -41,8 +34,6 @@ const AboutMe = () => {
 
               </div>
             </div>
-
-
 
           </div>
 

@@ -1,8 +1,5 @@
-import bild8 from "../assets/bild8.jpg"
-import bild4 from "../assets/bild4.jpg"
 import React from "react"
-
-import waldemarhansson01 from "../assets/Stills/WaldemarHansson_11_yuuieb.jpeg"
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import waldemarhansson08 from "../assets/Stills/ELLECOVERWALDEMAR2_wnzvqk.jpeg"
 import waldemarhansson09 from "../assets/Stills/GOTLAND_02_gccijl.jpeg"
 import waldemarhansson10 from "../assets/Stills/KBS_BLKWEEK_27090_s_yvdssq.jpeg"
@@ -16,9 +13,6 @@ import waldemarhansson17 from "../assets/Stills/Rickard.jpeg"
 import waldemarhansson18 from "../assets/Stills/WALDEMARHANSSON_02_ztixgl-2.jpeg"
 import waldemarhansson19 from "../assets/Stills/WALDEMARHANSSON_03_fxvbgz.jpeg"
 import waldemarhansson20 from "../assets/Stills/WALDEMARHANSSON_07_pkyeve.jpeg"
-import waldemarhansson21 from "../assets/Stills/WaldemarHansson_08_xwhkqg.jpeg"
-import waldemarhansson22 from "../assets/Stills/Waldemarhansson_142_q0dcbm.jpeg"
-import waldemarhansson23 from "../assets/Stills/WaldemarHansson05_fjnsbi_gcjyjz.jpeg"
 import waldemarhansson24 from "../assets/Stills/waldemarhansson_20.jpg"
 import waldemarhansson25 from "../assets/Stills/waldemarhansson_31.jpg"
 import waldemarhansson26 from "../assets/WaldemarHansson_08__2023_IHOP_s.jpg"
@@ -30,14 +24,9 @@ import waldemarhansson31 from "../assets/waldemarhansson_2023_sky.jpg"
 import waldemarhansson32 from "../components/WALDEMARHANSSON_0333.jpg"
 import waldemarhansson33 from "../assets/GWaldemarHansson_07_spread_kmxk2q.jpeg"
 import waldemarhansson34 from "../assets/WALDEMARHANSSON_0344.jpg"
-import waldemarhansson35 from "../assets/WaldemarHansson_08_xwhkqg.jpeg"
 import waldemarhansson36 from "../assets/WaldemarHansson__2023.jpg"
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import waldemarhansson37 from "../assets/KENTARO_FILMSTR.jpg"
 import waldemarhansson38 from "../assets/KENTARO_waldemarHansson_01.jpg"
-import waldemarhansson39 from "../assets/WALDEMARHANSSON_01_w_ceckdd.jpeg"
-
-
 
 const StillsGallery = () => {
 
@@ -49,39 +38,29 @@ const StillsGallery = () => {
         waldemarhansson26,
         waldemarhansson10,
         waldemarhansson27,
-
         waldemarhansson15,
         waldemarhansson31,
         waldemarhansson12,
         waldemarhansson18,
         waldemarhansson34,
         waldemarhansson13,
-
         waldemarhansson14,
-
         waldemarhansson36,
         waldemarhansson38,
         waldemarhansson11,
         waldemarhansson19,
         waldemarhansson25,
         waldemarhansson37,
-
         waldemarhansson28,
         waldemarhansson24,
         waldemarhansson16,
         waldemarhansson32,
         waldemarhansson33,
         waldemarhansson17,
-
-
         waldemarhansson20
-
     ]
 
-
-
     return (
-
 
         <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
@@ -100,15 +79,6 @@ const StillsGallery = () => {
                 ))}
             </Masonry>
         </ResponsiveMasonry>
-
-
-
-
-
-
-
-
-
     )
 }
 export default StillsGallery

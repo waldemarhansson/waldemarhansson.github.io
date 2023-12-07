@@ -3,15 +3,11 @@ import victor1 from "../assets/victorbild1.jpg"
 import victor2 from "../assets/victorbild2.jpg"
 import victor3 from "../assets/victorbild3.jpg"
 
-
-
-
 function InteractiveImage() {
     const images = [
         victor1,
         victor2,
         victor3
-        // ... add more image URLs
     ];
 
     const [info, setInfo] = useState({ visible: false, x: 0, y: 0 });

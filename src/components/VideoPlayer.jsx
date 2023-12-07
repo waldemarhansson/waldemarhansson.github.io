@@ -16,7 +16,6 @@ function VideoPlayer({ videoUrl, text }) {
         setShowControls(true); // Enable controls on click
         setShowOverlay(false)
 
-
     };
 
     return (

@@ -24,8 +24,8 @@ function App() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
   const [videoSource, setVideoSource] = useState('');
 
-  let vimeoreel916 = "https://player.vimeo.com/progressive_redirect/playback/855130465/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2b33a882698be76d4147ea69b3e6b2b2396c653f808ae4c783f643ef14bc045f"
-  let vimeoreel169 = "https://player.vimeo.com/progressive_redirect/playback/855122929/rendition/1080p/file.mp4?loc=external&log_user=0&signature=0cca314496957ac5e3fb2429eb6fe0b1ad92ac2abb4a2ab48a77ca108b0f7597"
+  let vimeoreel916 = "https://player.vimeo.com/progressive_redirect/playback/892227609/rendition/1080p/file.mp4?loc=external&log_user=0&signature=8c36c4f4e62ccda15cc97adff30a02513389b25dc0ccdd32462a7af47a1286d3"
+  let vimeoreel169 = "https://player.vimeo.com/progressive_redirect/playback/892229703/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6cd44cc311a79d7a682fa418cb8dd71c135344c83c25b6455014c8cf40de9e32"
 
   useEffect(() => {
     const handleResize = () => {

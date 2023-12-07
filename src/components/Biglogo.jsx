@@ -3,14 +3,10 @@ import ny from "../assets/nyloggafet.svg"
 
 
 
-const Biglogo = () =>{
+const Biglogo = () => {
 
 
-
-//the big logo
-
-    return(
-
+    return (
 
         <div className="big-logo-wrapper">
             <img src={ny}></img>
@@ -18,9 +14,6 @@ const Biglogo = () =>{
 
         </div>
     )
-
-
-
 
 }
 

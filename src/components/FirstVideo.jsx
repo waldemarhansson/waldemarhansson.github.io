@@ -1,7 +1,4 @@
 import { useEffect, useState } from "react"
-import placeholderImage from "../assets/Stills/KBS_HELLO_SPRINGss_wtgh6y.jpeg"
-
-
 
 const FirstVideo = ({ videoSource }) => {
 
@@ -22,8 +19,6 @@ const FirstVideo = ({ videoSource }) => {
     };
   }, []);
 
-
-
   return (
     <div className="firstVideo" >
       <p> WE 🤍 VISUAL STORYTELLING
@@ -31,8 +26,6 @@ const FirstVideo = ({ videoSource }) => {
       <video
         poster={isDesktop ? "src/assets/armand-916_superlow.jpg" : "src/assets/armand169_suprelow.jpg"}
         className="video-element" loop muted autoPlay playsInline src={videoSource} />
-
-
 
     </div>
 

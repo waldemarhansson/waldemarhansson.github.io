@@ -6,7 +6,6 @@ import ny from "../assets/gralogga.svg"
 import { useLocation, useNavigate } from "react-router-dom";
 
 
-
 const NavigtionBar = () => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate()

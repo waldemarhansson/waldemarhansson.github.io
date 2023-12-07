@@ -8,9 +8,6 @@ const Overlay = (props) => {
 
   };
 
-
-
-
   return (
     <div onClick={handleClick} className="overlay">
 
