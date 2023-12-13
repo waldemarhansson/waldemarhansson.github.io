@@ -2,9 +2,7 @@ import React from "react"
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import waldemarhansson08 from "../assets/Stills/ELLECOVERWALDEMAR2_wnzvqk.jpeg"
 import waldemarhansson09 from "../assets/Stills/GOTLAND_02_gccijl.jpeg"
-import waldemarhansson10 from "../assets/Stills/KBS_BLKWEEK_27090_s_yvdssq.jpeg"
 import waldemarhansson11 from "../assets/Stills/KBS_BLKWEEK_27984_irofrz.jpeg"
-import waldemarhansson12 from "../assets/Stills/KBS_HELLO_SPRING_ORG1665_S_rvdgjw.jpeg"
 import waldemarhansson13 from "../assets/Stills/KBS_HELLO_SPRING_ORG2494_s4hzu7.jpeg"
 import waldemarhansson14 from "../assets/Stills/KBS_HELLO_SPRINGss_wtgh6y.jpeg"
 import waldemarhansson15 from "../assets/Stills/KBS_SS22_22623_04_ob7o7v.jpeg"
@@ -27,16 +25,15 @@ import waldemarhansson34 from "../assets/WALDEMARHANSSON_0344.jpg"
 import waldemarhansson36 from "../assets/WaldemarHansson__2023.jpg"
 import shortwaldemarhansson37 from "../assets/KENTARO_FILMSTR.jpg"
 import shortwaldemarhansson38 from "../assets/KENTARO_waldemarHansson_01.jpg"
-import waldemarhansson39 from "../assets/Stills/recentStills/_Y4A1426 1.jpg"
-import waldemarhansson40 from "../assets/Stills/recentStills/_Y4A1764.jpg"
-import waldemarhansson41 from "../assets/Stills/recentStills/_Y4A4951 1_crop_s.jpg"
-import waldemarhansson42 from "../assets/Stills/recentStills/_Y4A4972fixad mark_mer_upptill.jpg"
-import shortwaldemarhansson43 from "../assets/Stills/recentStills/_Y4A5036_poosiblecrop_spread_s.jpg"
-import waldemarhansson44 from "../assets/Stills/recentStills/_Y4A5077_s.jpg"
-import waldemarhansson45 from "../assets/Stills/recentStills/_Y4A5705_NN_new_3_crop9_16_s.jpg"
-import waldemarhansson46 from "../assets/Stills/recentStills/_Y4A5897ihop_s.jpg"
-import waldemarhansson47 from "../assets/Stills/recentStills/_Y4A5946.jpg"
-import waldemarhansson48 from "../assets/Stills/recentStills/_Y4A5974_merihop_s3.jpg"
+import waldemarhansson39 from "../assets/Stills/recentStills/Y4A1426 1.jpg"
+import waldemarhansson40 from "../assets/Stills/recentStills/Y4A1764.jpg"
+import waldemarhansson41 from "../assets/Stills/recentStills/Y4A4951 1_crop_s.jpg"
+import waldemarhansson42 from "../assets/Stills/recentStills/Y4A4972fixad mark_mer_upptill.jpg"
+import waldemarhansson44 from "../assets/Stills/recentStills/Y4A5077_s.jpg"
+import waldemarhansson45 from "../assets/Stills/recentStills/Y4A5705_NN_new_3_crop9_16_s.jpg"
+import waldemarhansson46 from "../assets/Stills/recentStills/Y4A5897ihop_s.jpg"
+import waldemarhansson47 from "../assets/Stills/recentStills/Y4A5946.jpg"
+import waldemarhansson48 from "../assets/Stills/recentStills/Y4A5974_merihop_s3.jpg"
 import waldemarhansson49 from "../assets/Stills/recentStills/victorbild2.jpg"
 import shortwaldemarhansson50 from "../assets/Stills/recentStills/WALDEMARHANSSON_01_s.jpg"
 import waldemarhansson51 from "../assets/Stills/recentStills/WALDEMARHANSSON_04.jpg"
@@ -77,9 +74,7 @@ const StillsGallery = () => {
         waldemarhansson36,
         waldemarhansson53,
         waldemarhansson47,
-        //shortwaldemarhansson37,
         shortwaldemarhansson50,
-
 
         waldemarhansson11,
         waldemarhansson44,
