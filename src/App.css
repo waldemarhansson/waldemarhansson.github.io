@@ -331,8 +331,10 @@ body {
   position: relative;
   z-index: 1;
   height: 100%;
-
 }
+
+
+
 
 .firstVideo p {
   position: absolute;
@@ -344,6 +346,7 @@ body {
   text-align: center;
 
 }
+
 
 .video-element {
   width: 100%;

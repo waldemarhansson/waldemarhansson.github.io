@@ -1,11 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import NavigtionBar from './components/NavigationBar.jsx'
 import FirstVideo from './components/FirstVideo'
 import { useEffect } from 'react'
 import AboutMe from './components/AboutMe'
 import Clients from './components/Clients'
-import SocialMedia from './components/SocialMedia'
 import StandingVideo from './components/StandingVideo'
 import SingleLayingVideo from './components/SIngleLayingVideo'
 import victorVideo1 from "./assets/victor1.mp4"
@@ -16,8 +14,6 @@ import imanDans from './assets/IMAN NEW WALD_02.mp4'
 import imandLeende from './assets/IMAN NEW WALD_01.mp4'
 import crawl from "./assets/crawl.mp4"
 import InteractiveImage from './components/InteractiveImage'
-
-
 
 function App() {
 
