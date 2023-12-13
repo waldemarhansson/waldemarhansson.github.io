@@ -1,13 +1,18 @@
 import { useState } from "react";
-import victor1 from "../assets/victorbild1.jpg"
-import victor2 from "../assets/victorbild2.jpg"
-import victor3 from "../assets/victorbild3.jpg"
-
+import image1 from "../assets/Stills/InteractiveImage/WALDEMARHANSSON_ARK_01.jpg"
+import image3 from "../assets/Stills/InteractiveImage/WALDEMARHANSSON_ARK_02.jpg"
+import image4 from "../assets/Stills/InteractiveImage/WALDEMARHANSSON_ARK_03.jpg"
+import image5 from "../assets/Stills/InteractiveImage/WALDEMARHANSSON_ARK_04.jpg"
+import image6 from "../assets/Stills/InteractiveImage/WALDEMARHANSSON_ARK_05.jpg"
+import image7 from "../assets/Stills/InteractiveImage/WALDEMARHANSSON_ARK_06.jpg"
 function InteractiveImage() {
     const images = [
-        victor1,
-        victor2,
-        victor3
+        image3,
+        image1,
+        image4,
+        image5,
+        image6,
+        image7
     ];
 
     const [info, setInfo] = useState({ visible: false, x: 0, y: 0 });
