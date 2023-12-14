@@ -63,7 +63,7 @@ function App() {
               <StandingVideo video={crawl} />
             </div>
             <div className="carousell-wrapper">
-              <StandingVideo video={victorVideo2} />
+              <StandingVideo video={"https://player.vimeo.com/progressive_redirect/playback/894506296/rendition/1080p/file.mp4?loc=external&log_user=0&signature=624973b2d411f9f0eaf468ac23c9c3e41faea6869b3faa38d8ec3a57e4534d23"} />
             </div>
           </div>
         </section>
@@ -77,7 +77,7 @@ function App() {
       {isDesktop ? (<section id="section3">
         <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/894051084/rendition/1080p/file.mp4?loc=external&log_user=0&signature=20a3cb1e67b6e301465a1d466bc8890e0c354d2ad8432d34e2e1334563c61a60"} />
         <SingleLayingVideo />
-        <LayingVideoWithChoise video={liggandevideo} />
+        <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/894193085/rendition/1080p/file.mp4?loc=external&log_user=0&signature=642c6a1374898c01ec9ecb1a6eb5b0d3e5803feb42859d1fcae30115c28aeca8"} />
         <LayingVideoWithChoise video={imanDans} />
         <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/894048584/rendition/1080p/file.mp4?loc=external&log_user=0&signature=a6c54192f53b2898169c2c02d51a5ff684afd452404b355975a81e0227ff053d"} />
       </section>
@@ -85,7 +85,7 @@ function App() {
         <section id="section4">
           <InteractiveImage />
           <StandingVideo video={"https://player.vimeo.com/progressive_redirect/playback/894088014/rendition/1080p/file.mp4?loc=external&log_user=0&signature=68dc9c90b1ecdd4f5261f50d30b814b6753e93ef36dc19075dea5c7c225d1abd"} />
-          <LayingVideoWithChoise video={imanDans} />
+
           <LayingVideoWithChoise video={imandLeende} />
           <SingleLayingVideo />
 
