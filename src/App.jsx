@@ -78,7 +78,6 @@ function App() {
         <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/894051084/rendition/1080p/file.mp4?loc=external&log_user=0&signature=20a3cb1e67b6e301465a1d466bc8890e0c354d2ad8432d34e2e1334563c61a60"} />
         <SingleLayingVideo />
         <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/894193085/rendition/1080p/file.mp4?loc=external&log_user=0&signature=642c6a1374898c01ec9ecb1a6eb5b0d3e5803feb42859d1fcae30115c28aeca8"} />
-        <LayingVideoWithChoise video={imanDans} />
         <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/894048584/rendition/1080p/file.mp4?loc=external&log_user=0&signature=a6c54192f53b2898169c2c02d51a5ff684afd452404b355975a81e0227ff053d"} />
       </section>
       ) : (
