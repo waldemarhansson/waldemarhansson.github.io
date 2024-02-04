@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 const FirstVideo = ({ videoSource }) => {
-  const [isPlaying, setIsPlaying] = useState(true)
+
   const [isDesktop, setIsDesktop] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
@@ -13,28 +13,14 @@ const FirstVideo = ({ videoSource }) => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-  const handleCanPlay = () => {
-    console.log("can play now")
-    setIsPlaying(true);
-  };
 
   return (
-    <div className="firstVideo" style={{
-      position: 'absolute',
-      left: 0,
-      width: '100%',
-      height: 'auto',
-    }}>
+    <div className="firstVideo" >
       <p> WE 🤍 VISUAL STORYTELLING
       </p>
 
-      <video onPlay={handleCanPlay}
+      <video poster={isDesktop ? "src/assets/armand-916_superlow.jpg" : "src/assets/armand169_suprelow.jpg"}
         className="video-element" loop muted autoPlay playsInline src={videoSource} />
-
-
-
-
-
     </div>
 
   )

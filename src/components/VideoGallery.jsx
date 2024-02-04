@@ -31,7 +31,6 @@ const VideoGallery = () => {
 
             <Suspense>
                 <LazyVideoWithPoster poster={Kentaro} videoSrc={"https://player.vimeo.com/progressive_redirect/playback/722941004/rendition/1080p/file.mp4?loc=external&log_user=0&signature=0307a1c33f12bd42a5a82cdd9895e374bb8c452514a668c04d0459876a44d26e"}></LazyVideoWithPoster>
-
                 <LazyVideoWithPoster poster={Kundkraft} videoSrc={"https://player.vimeo.com/progressive_redirect/playback/499970486/rendition/1080p/file.mp4?loc=external&log_user=0&signature=60fd682e58bf89017cd6e9cf52315aaa75c5d7864de1c2e067e62a572f0272e9"}></LazyVideoWithPoster>
                 <LazyVideoWithPoster poster={SvenskaSpel} videoSrc={"https://player.vimeo.com/progressive_redirect/playback/588321114/rendition/1080p/file.mp4?loc=external&log_user=0&signature=4b2e56ddfcb8104d9fdac8965d628fef5bc83e3e6a34011d073cc42997995494"}></LazyVideoWithPoster>
                 <LazyVideoWithPoster poster={Kundkraft2} videoSrc={"https://player.vimeo.com/progressive_redirect/playback/469564749/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2960ba24c1040f241c01a51b597ca0d46b72a9244e05aa9004c391fb6a487cb7"}></LazyVideoWithPoster>
