@@ -1,5 +1,4 @@
-import React, { lazy, Suspense } from "react"
-
+import React, { lazy, Suspense, useState } from "react"
 import VideoPlayer from "./VideoPlayer";
 import VimeoVideoGallery from "./VimeoVideoGallery";
 const LazyVideoWithPoster = lazy(() => import('./VideoWithPoster'));
@@ -20,6 +19,10 @@ const VideoGallery = () => {
     const Berlutti = "https:\/\/i.vimeocdn.com\/video\/767554571-d7ef5f3af5088ae4100dbf1852e846717282998a32fdde78a538db0ffa8ff8cb-d_640"
     const BerluttiTwilight = "https:\/\/i.vimeocdn.com\/video\/750896747-5b612bee048dd022e39f4ce320a5e4e3f96c713e144b74f86100b93398ecc534-d_640"
     const Inabo = "https://i.vimeocdn.com/video/751242983-0b453e217308a7d272aad90c254f87ebbd009f749b10ca31997ccd98a4529d11-d_1920x1080"
+
+
+
+
 
     return (
 

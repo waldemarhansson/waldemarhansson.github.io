@@ -9,20 +9,10 @@ const VideoWithPoster = ({ poster, videoSrc }) => {
 
     return (
         <div className='video-with-poster'>
-            {isPlaying ? (
-                <video autoPlay={isPlaying}
-                    controls={isPlaying} poster={poster} src={videoSrc}></video>
-            ) : (
-                <div>
-                    <img
-                        src={poster}
-                        alt="Video Poster"
-                        onClick={handlePlayClick}
-                        style={{ cursor: 'pointer', width: "100%" }}
-                    />
 
-                </div>
-            )}
+            <video onClick={handlePlayClick} onPause={() => setPlaying(false)}
+                controls={isPlaying} poster={poster} src={videoSrc}></video>
+
         </div>
     );
 };
