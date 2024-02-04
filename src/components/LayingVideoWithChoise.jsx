@@ -5,7 +5,7 @@ const LayingVideoWithChoise = ({ video }) => {
 
         <div className="laying-photogallery">
 
-            <video autoPlay loop muted playsInline src={video} controls={true}></video>
+            <video autoPlay loop muted playsInline src={video} ></video>
 
         </div>
     )

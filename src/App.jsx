@@ -14,7 +14,7 @@ import imanDans from './assets/IMAN NEW WALD_02.mp4'
 import imandLeende from './assets/IMAN NEW WALD_01.mp4'
 import crawl from "./assets/crawl.mp4"
 import InteractiveImage from './components/InteractiveImage'
-
+import LoadingImage from './components/LoadingImage'
 function App() {
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
@@ -55,6 +55,7 @@ function App() {
 
       {isDesktop ? (
         <section id="section1">
+          <LoadingImage />
           <div className="carousell-container">
             <div className="carousell-wrapper">
               <StandingVideo video={victorVideo1} />
@@ -82,6 +83,7 @@ function App() {
       </section>
       ) : (
         <section id="section4">
+          <LoadingImage />
           <InteractiveImage />
           <StandingVideo video={"https://player.vimeo.com/progressive_redirect/playback/894088014/rendition/1080p/file.mp4?loc=external&log_user=0&signature=68dc9c90b1ecdd4f5261f50d30b814b6753e93ef36dc19075dea5c7c225d1abd"} />
 
