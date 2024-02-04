@@ -380,6 +380,13 @@ body {
   display: block;
 }
 
+.video-with-poster video {
+  display: block;
+}
+
+.video-with-poster img {
+  display: block;
+}
 
 /*ABOUT ME*/
 

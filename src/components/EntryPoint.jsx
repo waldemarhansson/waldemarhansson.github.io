@@ -5,6 +5,7 @@ import App from "../App";
 import VideoGallery from "./VideoGallery";
 import Stillsgallery from "./Stillsgallery"
 import ScrollToAnchor from "./ScrollToAnchor";
+import VimeoGallero from "./VimeoVideoGallery";
 
 const EntryPoint = () => {
 

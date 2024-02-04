@@ -5,15 +5,10 @@ const FirstVideo = ({ videoSource }) => {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
-    // Update the 'isDesktop' state when the window is resized
     function handleResize() {
       setIsDesktop(window.innerWidth >= 768);
     }
-
-    // Attach the event listener for window resize
     window.addEventListener('resize', handleResize);
-
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
