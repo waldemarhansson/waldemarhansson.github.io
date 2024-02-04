@@ -22,19 +22,28 @@ function InteractiveImage() {
         const x = event.nativeEvent.offsetX;
         const y = event.nativeEvent.offsetY;
 
-        const nextImageIndex =
-            (currentImageIndex + 1) % images.length;
+        // Calculate the percentage of the click position relative to the container width
+        const containerWidth = event.currentTarget.clientWidth;
+        const clickPositionPercentage = (x / containerWidth) * 100;
+
+        // Check if the click occurred on the left side (less than 50%)
+        if (clickPositionPercentage < 50) {
+            // Go to the previous image
+            const previousImageIndex =
+                (currentImageIndex - 1 + images.length) % images.length;
+            setCurrentImageIndex(previousImageIndex);
+        } else {
+            // Go to the next image
+            const nextImageIndex =
+                (currentImageIndex + 1) % images.length;
+            setCurrentImageIndex(nextImageIndex);
+        }
 
         setInfo({ visible: true, x, y });
-        setCurrentImageIndex(nextImageIndex);
-    };
-
-    const handleContainerClick = () => {
-        setInfo({ visible: false, x: 0, y: 0 });
     };
 
     return (
-        <div className="image-container" onClick={handleContainerClick}>
+        <div className="image-container" >
             <img
                 src={images[currentImageIndex]}
                 alt="Interactive"
