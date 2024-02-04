@@ -23,9 +23,19 @@ const AboutMe = () => {
             Let's get to work.
             <br />
             <br />
-            <div className="container-for-map"> <div className="located-text"> We are located in the center of Stockholm at Linnegatan 4, Östermalm.</div>
+            <div > <div className="located-text"> We are located in the center of Stockholm at Linnegatan 4, Östermalm.</div>
 
-              <img className="map" src={map} ></img></div>
+              <iframe className="google-maps"
+                src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d508.6727679276512!2d18.074288976060306!3d59.33811137824821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d82037ab9dd%3A0xa4a3747ea6b31fcf!2sVisual%20Storytelling!5e0!3m2!1ssv!2sse!4v1707066383088!5m2!1ssv!2sse`}
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                onClick={() => window.location.href = mapLocation}
+              ></iframe>
+            </div>
 
             <div className="emailWrapper">
               <div className="email"> <b>Waldemar Hansson</b> <br /> +46 707 31 37 41 <br />   <a href={`mailto:${email}`} onClick={openMailProgram} className="email">
