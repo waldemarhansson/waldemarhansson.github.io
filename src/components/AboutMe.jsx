@@ -1,7 +1,11 @@
 import map from "../assets/stills/kartan_01.jpg"
 
 const AboutMe = () => {
-
+  const email = "waldemar@waldemarhansson.com"
+  const openMailProgram = () => {
+    // You can use a mailto link to open the user's default mail program
+    window.location.href = `mailto:${email}`;
+  };
   return (
     <div className="about-me-wrapper">
 
@@ -24,7 +28,9 @@ const AboutMe = () => {
               <img className="map" src={map} ></img></div>
 
             <div className="emailWrapper">
-              <div className="email"> <b>Waldemar Hansson</b> <br /> +46 707 31 37 41 <br /> waldemar@visualstorytelling.se</div>
+              <div className="email"> <b>Waldemar Hansson</b> <br /> +46 707 31 37 41 <br />   <a href={`mailto:${email}`} onClick={openMailProgram} className="email">
+                {email}
+              </a></div>
               <div className="email"> <b>Adress</b> <br /> Linnegatan 4 <br /> 114 47 Stockholm</div>
               <div className="social-media-wrapper">
                 <a href="https://www.instagram.com/waldemarhansson/">

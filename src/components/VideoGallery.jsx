@@ -7,15 +7,15 @@ import VideoWithPoster from "./VideoWithPoster";
 
 
 const VideoGallery = () => {
-    const poster = "https:\/\/i.vimeocdn.com\/video\/1656709706-806439c545746a0490c0f4179efc411edfe7ef69ec80cd9cd7429db1b258a034-d_295x166"
-    const BernadotteKylberg = "https:\/\/i.vimeocdn.com\/video\/1742059276-138f42aa1f3d6740fbdaa47000ec39432de0b70df519ca031d6b57adfc404cf8-d_295x166"
+    const poster = "https://i.vimeocdn.com/video/1793385943-1fc74352d57ac5fb94b9c81639a214c215ae50b08fe42af86bf00eb898d0d3db-d_1920x1080"
+    const BernadotteKylberg = "https://i.vimeocdn.com/video/1742059276-138f42aa1f3d6740fbdaa47000ec39432de0b70df519ca031d6b57adfc404cf8-d_1920x1080"
     const ArmandMemira = "https:\/\/i.vimeocdn.com\/video\/1380992879-d5fcbbcd356a1644548e2f99b5a1e59e2acb29eda98eef0a7d5364c524166574-d_640"
-    const ElineaYou = "https:\/\/i.vimeocdn.com\/video\/1483357440-2f150fcb8fadb96ce4224bcad47025bbd99db5291bb0cbcbe796bbdf8d221fc0-d_295x166"
-    const Kentaro = "https:\/\/i.vimeocdn.com\/video\/1455798545-5e5954a060efd98291735f773489191b714f5c41f99145c0a0fa397292b0f273-d_295x166"
-    const Kundkraft = "https:\/\/i.vimeocdn.com\/video\/1034549648-15ea33fbdd8014240526befc7bc7c4f230c9038e8a154862044172282eeccc12-d_295x166"
+    const ElineaYou = "https://i.vimeocdn.com/video/1483357440-2f150fcb8fadb96ce4224bcad47025bbd99db5291bb0cbcbe796bbdf8d221fc0-d_1920x1080"
+    const Kentaro = "https://i.vimeocdn.com/video/1455798545-5e5954a060efd98291735f773489191b714f5c41f99145c0a0fa397292b0f273-d_1920x1080"
+    const Kundkraft = "https://i.vimeocdn.com/video/1034549648-15ea33fbdd8014240526befc7bc7c4f230c9038e8a154862044172282eeccc12-d_1920x1080"
     const SvenskaSpel = "https:\/\/i.vimeocdn.com\/video\/1217105317-ef3f4736a53cac4e9b4d0380b9de4f99ffcbce67b0c5596944c0cea4fc083828-d_640"
-    const Kundkraft2 = "https:\/\/i.vimeocdn.com\/video\/977588542-8563196ae50e5792daedf2d2704ce7c9c19935684d87b134156c48c4df118ad4-d_295x166"
-    const RickardSöderberg = "https:\/\/i.vimeocdn.com\/video\/1601615958-ced38eeac3fcb28efe62de6a060ca19913ade98c28a11adc3083a66182657e30-d_295x166"
+    const Kundkraft2 = "https://i.vimeocdn.com/video/977588542-8563196ae50e5792daedf2d2704ce7c9c19935684d87b134156c48c4df118ad4-d_1920x1080"
+    const RickardSöderberg = "https://i.vimeocdn.com/video/1793383700-9dfcc6e5b288d743feb57c1672bbca89e10862d81f6844f266cf167bc9f03770-d_1920x1080"
     const Berlutti = "https:\/\/i.vimeocdn.com\/video\/767554571-d7ef5f3af5088ae4100dbf1852e846717282998a32fdde78a538db0ffa8ff8cb-d_640"
     const BerluttiTwilight = "https:\/\/i.vimeocdn.com\/video\/750896747-5b612bee048dd022e39f4ce320a5e4e3f96c713e144b74f86100b93398ecc534-d_640"
     const Inabo = "https://i.vimeocdn.com/video/751242983-0b453e217308a7d272aad90c254f87ebbd009f749b10ca31997ccd98a4529d11-d_1920x1080"

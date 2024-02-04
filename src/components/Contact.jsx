@@ -1,7 +1,10 @@
 
 
 const Contact = () => {
-
+  const openMailProgram = () => {
+    // You can use a mailto link to open the user's default mail program
+    window.location.href = `mailto:${email}`;
+  };
   return (
     <div className="contact-info">
 
