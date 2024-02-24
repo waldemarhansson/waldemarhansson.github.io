@@ -22,9 +22,11 @@ function InteractiveImage() {
     const [dragDirection, setDragDirection] = useState(null);
 
     const handleStart = (event) => {
+        event.preventDefault();
         setInitialX(event.touches[0].clientX);
     }
     const handleTouchMove = (event) => {
+        event.preventDefault();
         if (!initialX) {
             return;
         }
