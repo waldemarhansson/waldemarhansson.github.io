@@ -16,8 +16,7 @@ const Overlay = (props) => {
         <li> <Link to="/film">Film</Link></li>
         <li><Link to="/stills">Stills</Link></li>
         <li><Link to="/#aboutme">About</Link></li>
-        <li><Link to="/#contact">Contact</Link></li>
-        <li><Link to="/#clients">Clients</Link></li>
+        <li><Link to="/#client">Contact</Link></li>
 
       </ul>
 
