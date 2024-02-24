@@ -24,6 +24,7 @@ function InteractiveImage() {
     }
 
     const handleMove = (event) => {
+        event.preventDefault();
         if (!initialX) {
             return;
         }

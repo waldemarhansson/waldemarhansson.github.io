@@ -14,7 +14,7 @@ const VimeoVideoGallery = ({ videoUrl }) => {
                 config={{
                     vimeo: {
                         playerOptions: {
-                            title: false,
+                            title: true,
 
 
                         },
