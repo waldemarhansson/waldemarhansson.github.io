@@ -398,7 +398,14 @@ body {
 }
 
 
+.container {
+  display: block;
+}
 
+.interactive-image-container,
+.standing-video-container {
+  flex: 2;
+}
 
 /*ABOUT ME*/
 

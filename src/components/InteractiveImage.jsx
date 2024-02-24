@@ -61,7 +61,7 @@ function InteractiveImage() {
                 alt="Interactive"
                 className="interactive-image"
                 style={{
-                    position: "absolute",
+                    position: "relative",
                     left: 0,
                     top: 0,
                     transform: `translateX(-${dragDistance}px)`,
