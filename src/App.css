@@ -28,44 +28,19 @@
 
 }
 
-/*VideoPlayer*/
 
-
-.video-overlay {
-  position: relative;
-  width: 100%;
-  cursor: pointer;
-}
-
-.overlay-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
 
 /*Interactive image*/
-.image-container {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  margin: 0;
-  /* Reset margin */
-  padding: 0;
-  /* Reset padding */
-}
+
 
 .interactive-image {
   max-width: 100%;
   cursor: pointer;
   vertical-align: middle;
+}
+
+.interactive-wrapper {
+  position: relative;
 }
 
 .image-index {
@@ -79,6 +54,17 @@
   border-radius: 5px;
 }
 
+.interactive-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+.next-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
 
 body {
   margin: 0;
@@ -389,9 +375,30 @@ body {
   display: block;
 }
 
+.video-with-poster {
+  position: relative;
+}
+
 .video-with-poster img {
   display: block;
 }
+
+.text-overlay {
+  position: absolute;
+  bottom: 0%;
+  left: 3%;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.text-overlay p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 10px;
+}
+
+
+
 
 /*ABOUT ME*/
 
