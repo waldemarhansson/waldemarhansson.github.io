@@ -17,6 +17,36 @@ function InteractiveImage() {
 
     const [info, setInfo] = useState({ visible: false, x: 0, y: 0 });
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [initialX, setInitialX] = useState(null);
+
+    const handleStart = (event) => {
+        setInitialX(event.touches[0].clientX);
+    }
+
+    const handleMove = (event) => {
+        if (!initialX) {
+            return;
+        }
+        const currentX = event.touches[0].clientX;
+        const diffX = initialX - currentX;
+
+        if (diffX > 0) {
+            // Swipe left reaction
+            const nextImageIndex =
+                (currentImageIndex + 1) % images.length;
+            setCurrentImageIndex(nextImageIndex);
+        } else {
+            // Swipe right reaction
+            const previousImageIndex =
+                (currentImageIndex - 1 + images.length) % images.length;
+            setCurrentImageIndex(previousImageIndex);
+        }
+
+        setInitialX(null);
+
+    }
+
+
 
     const handleImageClick = (event) => {
         const x = event.nativeEvent.offsetX;
@@ -43,7 +73,7 @@ function InteractiveImage() {
     };
 
     return (
-        <div className="image-container" >
+        <div className="image-container" onTouchStart={handleStart} onTouchMove={handleMove}>
             <img
                 src={images[currentImageIndex]}
                 alt="Interactive"
