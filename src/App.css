@@ -43,6 +43,21 @@
   position: relative;
 }
 
+.interactive-images {
+  width: 100%;
+}
+
+.interactive-image-overlay {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  color: #f8f9f9;
+}
+
+.interactive-wrapper {
+  position: relative;
+}
+
 .image-index {
   position: absolute;
   top: 10px;
