@@ -23,7 +23,8 @@ function InteractiveImage() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        swipeToSlide: true
+        swipeToSlide: true,
+        arrows: false
     };
 
     return (

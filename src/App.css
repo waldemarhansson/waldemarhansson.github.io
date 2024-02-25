@@ -45,6 +45,7 @@
 
 .interactive-images {
   width: 100%;
+  display: block;
 }
 
 .interactive-image-overlay {
