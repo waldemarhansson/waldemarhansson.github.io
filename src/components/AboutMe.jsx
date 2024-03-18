@@ -1,4 +1,5 @@
 import map from "../assets/stills/kartan_01.jpg"
+import studiophoto from "../assets/Stills/recentStills/studio.jpg"
 
 const AboutMe = () => {
   const email = "waldemar@waldemarhansson.com"
@@ -23,25 +24,25 @@ const AboutMe = () => {
             Let's get to work.
             <br />
             <br />
-            <div > <div className="located-text"> We are located in the center of Stockholm at Linnegatan 4, Östermalm.</div>
+            <div > <div className="located-text"> We are located at Inedalsgatan 13A, Kungsholmen.</div>
 
               <iframe className="google-maps"
-                src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d508.6727679276512!2d18.074288976060306!3d59.33811137824821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d82037ab9dd%3A0xa4a3747ea6b31fcf!2sVisual%20Storytelling!5e0!3m2!1ssv!2sse!4v1707066383088!5m2!1ssv!2sse`}
-                width="600"
-                height="450"
+                src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.244995471928!2d18.053647!3d59.336118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d7c1c7b2b0f%3A0xf1606a23dd815e8f!2sInedalsgatan%2013A%2C%20112%2033%20Stockholm%2C%20Sweden!5e0!3m2!1sen!2s!4v1707066383088!5m2!1sen!2s`}
+
+
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 onClick={() => window.location.href = mapLocation}
               ></iframe>
-            </div>
 
+            </div>
             <div className="emailWrapper">
               <div className="email"> <b>Waldemar Hansson</b> <br /> +46 707 31 37 41 <br />   <a href={`mailto:${email}`} onClick={openMailProgram} className="email">
                 {email}
               </a></div>
-              <div className="email"> <b>Adress</b> <br /> Linnegatan 4 <br /> 114 47 Stockholm</div>
+              <div className="email"> <b>Adress</b> <br /> Inedalsgatan 13A <br /> 112 33 Stockholm</div>
               <div className="social-media-wrapper">
                 <a href="https://www.instagram.com/waldemarhansson/">
                   <i className="fab fa-instagram"></i>

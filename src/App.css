@@ -464,7 +464,7 @@ body {
 .email {
   margin-top: 2%;
   color: rgb(249, 248, 248);
-  font-size: 9px;
+  font-size: 8px;
   text-align: center;
 }
 
@@ -497,7 +497,7 @@ body {
 /*map*/
 .google-maps {
   width: 100%;
-  height: 70%;
+  height: 100%;
 }
 
 /*Standing Video*/
@@ -505,6 +505,11 @@ body {
   width: 100%;
   height: 100%;
   display: block;
+
+}
+
+.studiophoto {
+  width: 100%;
 
 }
 
@@ -687,8 +692,12 @@ body {
 
   .google-maps {
     width: 100%;
-    height: 60%;
+    height: 100%;
   }
 
+  .studiophoto {
+    width: 30%;
+    height: 30%;
+  }
 
 }
