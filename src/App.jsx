@@ -84,9 +84,7 @@ function App() {
       ) : (
         <section id="section4">
           <InteractiveImage />
-          <StandingVideo video={"https://player.vimeo.com/progressive_redirect/playback/894088014/rendition/1080p/file.mp4?loc=external&log_user=0&signature=68dc9c90b1ecdd4f5261f50d30b814b6753e93ef36dc19075dea5c7c225d1abd"} />
-
-          <LayingVideoWithChoise video={imandLeende} />
+          <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/943662955/rendition/1080p/file.mp4?loc=external&log_user=0&signature=be76dd794f26e80468a6f10838ee960bb23964ac5d980b63bb80c4cb3616902e"} />
           <SingleLayingVideo />
 
         </section>
