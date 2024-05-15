@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
+import welove from '../assets/welove.png'
 
-const FirstVideo = ({ videoSource }) => {
+const FirstVideo = ({ videoSource, logoSource }) => {
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth <= 768);
 
@@ -16,8 +17,8 @@ const FirstVideo = ({ videoSource }) => {
 
   return (
     <div className="firstVideo" >
-      <p> WE 🤍 VISUAL STORYTELLING
-      </p>
+
+      <img className="weLove-logo" src={welove}></img>
 
       <video poster={isDesktop ? "src/assets/armand-916_superlow.jpg" : "src/assets/armand169_suprelow.jpg"}
         className="video-element" loop muted autoPlay playsInline src={videoSource} />

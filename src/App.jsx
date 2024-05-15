@@ -14,11 +14,14 @@ import imanDans from './assets/IMAN NEW WALD_02.mp4'
 import imandLeende from './assets/IMAN NEW WALD_01.mp4'
 import crawl from "./assets/crawl.mp4"
 import InteractiveImage from './components/InteractiveImage'
+import desktopLogo from './assets/welove.png'
+import mobileLogo from './assets/weloveMobile.png'
 //hej
 function App() {
 
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
   const [videoSource, setVideoSource] = useState('');
+
 
   let vimeoreel916 = "https://player.vimeo.com/progressive_redirect/playback/892227609/rendition/1080p/file.mp4?loc=external&log_user=0&signature=8c36c4f4e62ccda15cc97adff30a02513389b25dc0ccdd32462a7af47a1286d3"
   let vimeoreel169 = "https://player.vimeo.com/progressive_redirect/playback/892229703/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6cd44cc311a79d7a682fa418cb8dd71c135344c83c25b6455014c8cf40de9e32"
@@ -31,6 +34,7 @@ function App() {
     const initialVideoSource = window.innerWidth <= 768 ? vimeoreel169 : vimeoreel916;
     setVideoSource(initialVideoSource);
 
+
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -40,7 +44,9 @@ function App() {
 
   useEffect(() => {
     const newVideoSource = isDesktop ? vimeoreel169 : vimeoreel916;
+
     setVideoSource(newVideoSource);
+
   }, [isDesktop]);
 
   return (
