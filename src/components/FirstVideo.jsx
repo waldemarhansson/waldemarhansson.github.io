@@ -20,7 +20,7 @@ const FirstVideo = ({ videoSource, logoSource }) => {
 
       <img className="weLove-logo" src={welove}></img>
 
-      <video poster={isDesktop ? "src/assets/armand-916_superlow.jpg" : "src/assets/armand169_suprelow.jpg"}
+      <video poster={isDesktop ? "src/assets/VST_DP_02.jpg" : "src/assets/SHOWREEL_2025_DP.jpg"}
         className="video-element" loop muted autoPlay playsInline src={videoSource} />
     </div>
 

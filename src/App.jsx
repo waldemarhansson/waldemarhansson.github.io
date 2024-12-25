@@ -23,8 +23,8 @@ function App() {
   const [videoSource, setVideoSource] = useState('');
 
 
-  let vimeoreel916 = "https://player.vimeo.com/progressive_redirect/playback/892227609/rendition/1080p/file.mp4?loc=external&log_user=0&signature=8c36c4f4e62ccda15cc97adff30a02513389b25dc0ccdd32462a7af47a1286d3"
-  let vimeoreel169 = "https://player.vimeo.com/progressive_redirect/playback/892229703/rendition/1080p/file.mp4?loc=external&log_user=0&signature=6cd44cc311a79d7a682fa418cb8dd71c135344c83c25b6455014c8cf40de9e32"
+  let vimeoreel916 = "https://player.vimeo.com/progressive_redirect/playback/1031975691/rendition/1080p/file.mp4?loc=external&log_user=0&signature=5b32785b80e5a817d3ba8aa75713a37e11ea35903d4079e6f8e7892d21bce210"
+  let vimeoreel169 = "https://player.vimeo.com/progressive_redirect/playback/1031592005/rendition/1080p/file.mp4?loc=external&log_user=0&signature=ef290edddb40d37eb796681a5a749dd451c382304155ee7475c3f8f835fda738"
 
   useEffect(() => {
     const handleResize = () => {
@@ -89,8 +89,8 @@ function App() {
         </section>
       ) : (
         <section id="section4">
-          <InteractiveImage />
-          <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/943662955/rendition/1080p/file.mp4?loc=external&log_user=0&signature=be76dd794f26e80468a6f10838ee960bb23964ac5d980b63bb80c4cb3616902e"} />
+          <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/1036104648/rendition/2160p/file.mp4?loc=external&log_user=0&signature=465be083dc67dc22389af2c76e7e54e1b860852d3db17317a01f3e4440ee8807"} />
+          <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/1037217899/rendition/1080p/file.mp4?loc=external&log_user=0&signature=24564b7664b74d0c377e464a40509e8789eb360de279c8841b7e7054c39cfc56"} />
           <SingleLayingVideo />
 
         </section>
