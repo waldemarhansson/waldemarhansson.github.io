@@ -3,11 +3,12 @@ import VideoPlayer from "./VideoPlayer";
 import VimeoVideoGallery from "./VimeoVideoGallery";
 const LazyVideoWithPoster = lazy(() => import('./VideoWithPoster'));
 import VideoWithPoster from "./VideoWithPoster";
+import arkPoster from "../assets/thumb-2.jpg"
 
 
 
 const VideoGallery = () => {
-    const ark = "src/assets/thumb-2.jpg"
+    const ark = arkPoster
     const poster = "https://i.vimeocdn.com/video/1793385943-1fc74352d57ac5fb94b9c81639a214c215ae50b08fe42af86bf00eb898d0d3db-d_1920x1080"
     const BernadotteKylberg = "https://i.vimeocdn.com/video/1742059276-138f42aa1f3d6740fbdaa47000ec39432de0b70df519ca031d6b57adfc404cf8-d_1920x1080"
     const ArmandMemira = "https:\/\/i.vimeocdn.com\/video\/1380992879-d5fcbbcd356a1644548e2f99b5a1e59e2acb29eda98eef0a7d5364c524166574-d_640"
@@ -28,7 +29,7 @@ const VideoGallery = () => {
     return (
 
         <div className="videogallery-wrapper">
-            <VideoWithPoster poster={ark} videoText={"Client Ark Sports ///"} videoSrc={"https://player.vimeo.com/progressive_redirect/playback/1022876655/rendition/1080p/file.mp4?loc=external&log_user=0&signature=17897f509ace88123cf68f80b69dbf870968c00dda217e3681041d31ce357d00"}></VideoWithPoster>
+            <VideoWithPoster poster={arkPoster} videoText={"Client Ark Sports ///"} videoSrc={"https://player.vimeo.com/progressive_redirect/playback/1022876655/rendition/1080p/file.mp4?loc=external&log_user=0&signature=17897f509ace88123cf68f80b69dbf870968c00dda217e3681041d31ce357d00"}></VideoWithPoster>
             <VideoWithPoster poster={BernadotteKylberg} videoText={"Client Bernadotte Kylberg ///"} videoSrc={"https://player.vimeo.com/progressive_redirect/playback/876839330/rendition/1080p/file.mp4?loc=external&log_user=0&signature=9530692ac98c88194bc396d4b4034b0b717a290a54ac5dbf0901b449dc9a4ceb"}></VideoWithPoster>
             <VideoWithPoster poster={ArmandMemira} text2={"Feat Armand Duplantis ///"} videoText={"Client Memira ///"} videoSrc={"https://player.vimeo.com/progressive_redirect/playback/671087058/rendition/1080p/file.mp4?loc=external&log_user=0&signature=2de22f593f056ee904be458afc85e1700af9dfc923b3cd47b3d1416180ed3ffc"}></VideoWithPoster>
             <VideoWithPoster poster={ElineaYou} videoText={"You ///"} text2={"Feat Elinea ///"} videoSrc={"https://player.vimeo.com/progressive_redirect/playback/737185087/rendition/1080p/file.mp4?loc=external&log_user=0&signature=ebeda3593841b3ec906aa18464f0cbf618d54f36638bf92189fefecfd247ab2c"}></VideoWithPoster>
