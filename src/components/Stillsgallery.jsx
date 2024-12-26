@@ -40,11 +40,11 @@ import waldemarhansson53 from "../assets/Stills/recentStills/WALDEMARHANSSON_115
 import waldemarhansson54 from "../assets/Stills/recentStills/WALDEMARHANSSON_117.jpg"
 import waldemarhansson55 from "../assets/Stills/recentStills/WALDEMARHANSSON_124.jpg"
 import waldemarhansson56 from "../assets/Stills/recentStills/WALDEMARHANSSON_126.jpg"
-import waldemarhansson57 from "../assets/Stills/recentStills/_Y4A1480_4_s.jpg"
-import waldemarhansson59 from "../assets/Stills/recentStills/_Y4A1620_916_new_s.jpg"
-import waldemarhansson60 from "../assets/Stills/recentStills/_Y4A1088_ORG_10_korn i lager_4_5_4_size_NCOL_s.jpg"
+import waldemarhansson57 from "../assets/Stills/recentStills/Y4A1480_4_s.jpg"
+import waldemarhansson59 from "../assets/Stills/recentStills/Y4A1620_916_new_s.jpg"
+import waldemarhansson60 from "../assets/Stills/recentStills/Y4A1088_ORG_10_kornilager_4_5_4_size_NCOL_s.jpg"
 import waldemarhansson61 from "../assets/Stills/recentStills/STILL_FROM_FILM_01_2_s.jpg"
-import waldemarhansson62 from "../assets/Stills/recentStills/_Y4A2179_169_0rg_08_s.jpg"
+import waldemarhansson62 from "../assets/Stills/recentStills/Y4A2179_169_0rg_08_s.jpg"
 
 
 const StillsGallery = () => {
