@@ -62,7 +62,7 @@ function App() {
       {isDesktop ? (
         <section id="section1">
           <div >
-            <StandingVideo video={"https://player.vimeo.com/progressive_redirect/playback/1036104648/rendition/2160p/file.mp4?loc=external&log_user=0&signature=465be083dc67dc22389af2c76e7e54e1b860852d3db17317a01f3e4440ee8807"} />
+            <StandingVideo video={"https://player.vimeo.com/progressive_redirect/playback/1036104648/rendition/1080p/file.mp4?loc=external&log_user=0&signature=55665f7ac37707189e6d78d64abe86ff1446b57d3d5b65c65a68d8a4396ff429"} />
           </div>
         </section>
       ) : (<section id="section1">
@@ -80,7 +80,7 @@ function App() {
         </section>
       ) : (
         <section id="section4">
-          <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/1036104648/rendition/2160p/file.mp4?loc=external&log_user=0&signature=465be083dc67dc22389af2c76e7e54e1b860852d3db17317a01f3e4440ee8807"} />
+          <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/1036104648/rendition/1080p/file.mp4?loc=external&log_user=0&signature=55665f7ac37707189e6d78d64abe86ff1446b57d3d5b65c65a68d8a4396ff429"} />
           <LayingVideoWithChoise video={"https://player.vimeo.com/progressive_redirect/playback/1037217899/rendition/1080p/file.mp4?loc=external&log_user=0&signature=24564b7664b74d0c377e464a40509e8789eb360de279c8841b7e7054c39cfc56"} />
           <SingleLayingVideo />
 
