@@ -45,6 +45,9 @@ import waldemarhansson59 from "../assets/Stills/recentStills/Y4A1620_916_new_s.j
 import waldemarhansson60 from "../assets/Stills/recentStills/Y4A1088_ORG_10_kornilager_4_5_4_size_NCOL_s.jpg"
 import waldemarhansson61 from "../assets/Stills/recentStills/STILL_FROM_FILM_01_2_s.jpg"
 import waldemarhansson62 from "../assets/Stills/recentStills/Y4A2179_169_0rg_08_s.jpg"
+import waldemarhansson63 from "../assets/Stills/recentStills/TALL_29178.jpg"
+import waldemarhansson64 from "../assets/Stills/recentStills/REKT_KVADR_28839.jpg"
+import waldemarhansson65 from "../assets/Stills/recentStills/ARK_PADDLES_24799 6.jpg"
 
 
 const StillsGallery = () => {
@@ -54,8 +57,10 @@ const StillsGallery = () => {
         waldemarhansson30,
         waldemarhansson59,
         waldemarhansson09,
+        waldemarhansson64,
         waldemarhansson18,
         waldemarhansson48,
+        waldemarhansson65,
         shortwaldemarhansson29,
         waldemarhansson60,
         waldemarhansson49,
@@ -70,6 +75,7 @@ const StillsGallery = () => {
         shortwaldemarhansson26,
         waldemarhansson42,
         waldemarhansson56,
+        waldemarhansson63,
         waldemarhansson34,
         waldemarhansson55,
         waldemarhansson54,
@@ -80,6 +86,7 @@ const StillsGallery = () => {
         waldemarhansson53,
         waldemarhansson47,
         shortwaldemarhansson50,
+        waldemarhansson20,
 
         waldemarhansson11,
         waldemarhansson44,
@@ -92,11 +99,10 @@ const StillsGallery = () => {
         waldemarhansson46,
         waldemarhansson24,
         waldemarhansson16,
+        waldemarhansson33,
         waldemarhansson32,
         waldemarhansson39,
-        waldemarhansson33,
-        waldemarhansson20,
-        shortwaldemarhansson37,
+
 
 
 
