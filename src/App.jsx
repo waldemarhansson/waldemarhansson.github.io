@@ -16,6 +16,7 @@ import crawl from "./assets/crawl.mp4"
 import InteractiveImage from './components/InteractiveImage'
 import desktopLogo from './assets/welove.png'
 import mobileLogo from './assets/weloveMobile.png'
+import StandingImage from './components/StandingImage'
 //hej
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
       <section id='section0'>
 
         <FirstVideo videoSource={videoSource} />
+        <StandingImage />
 
       </section>
 

@@ -16,12 +16,10 @@ const AboutMe = () => {
           <h1 className="title-text">We are specialized in visual storytelling and content creation.</h1>
           <div className="bread_text">
 
-            We help clients to visualize their story and build engagement for their brand or product.
-            Whether you're looking to promote your brand, unveil a compelling documentary,
-            or showcase the latest trends in sports and fashion, we have the vision and skills to bring your project to life.
-            We love visual storytelling and we are always striving to be as efficient as possible by improving the production processes.
-            Our Service include film  and stills  production, post production and concept developing.
-            Let's get to work.
+            We help clients visualize their story and build meaningful engagement around their brand or product. In recent years, we’ve found a deep passion for documentary filmmaking—capturing real stories with heart, honesty, and purpose. Whether you're unveiling a compelling documentary, launching a campaign, or showcasing the latest in sports and fashion, we dig deep to truly understand and fulfill your vision.
+            Visual storytelling is at the core of what we do, and we're always striving for smarter, more efficient production through continuous process improvement.
+            Our services include documentary and commercial film production, still photography, post-production, and concept development.
+            Let’s bring your story to life.
             <br />
             <br />
             <div > <div className="located-text"> We are located at Inedalsgatan 13A, Kungsholmen.</div>

@@ -41,13 +41,14 @@ import waldemarhansson54 from "../assets/Stills/recentStills/WALDEMARHANSSON_117
 import waldemarhansson55 from "../assets/Stills/recentStills/WALDEMARHANSSON_124.jpg"
 import waldemarhansson56 from "../assets/Stills/recentStills/WALDEMARHANSSON_126.jpg"
 import waldemarhansson57 from "../assets/Stills/recentStills/Y4A1480_4_s.jpg"
-import waldemarhansson59 from "../assets/Stills/recentStills/Y4A1620_916_new_s.jpg"
+import waldemarhansson59 from "../assets/svt1.jpg"
 import waldemarhansson60 from "../assets/Stills/recentStills/Y4A1088_ORG_10_kornilager_4_5_4_size_NCOL_s.jpg"
 import waldemarhansson61 from "../assets/Stills/recentStills/STILL_FROM_FILM_01_2_s.jpg"
 import waldemarhansson62 from "../assets/Stills/recentStills/Y4A2179_169_0rg_08_s.jpg"
 import waldemarhansson63 from "../assets/Stills/recentStills/TALL_29178.jpg"
 import waldemarhansson64 from "../assets/Stills/recentStills/REKT_KVADR_28839.jpg"
 import waldemarhansson65 from "../assets/Stills/recentStills/ARK_PADDLES_24799 6.jpg"
+import waldemarhansson66 from "../assets/Stills/recentStills/Y4A1620_916_new_s.jpg"
 
 
 const StillsGallery = () => {
