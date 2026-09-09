@@ -1,8 +1,8 @@
 import BackgroundVideo from './BackgroundVideo';
 import desktopLogo from '../assets/welove.png';
 import mobileLogo from '../assets/weloveMobile.png';
-import mobilePoster from '../assets/VST_DP_02.jpg';
-import desktopPoster from '../assets/SHOWREEL_2025_DP.jpg';
+import mobilePoster from '../assets/optimized/1ad02ea14ef0-1080.jpg';
+import desktopPoster from '../assets/optimized/01eb1fda3d07-1600.jpg';
 
 const FirstVideo = ({ videoSource, isDesktop }) => (
   <div className="firstVideo">
