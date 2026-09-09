@@ -1,29 +1,17 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-function ScrollToAnchor() {
-    const location = useLocation();
-    const lastHash = useRef('');
-
-    // listen to location change using useEffect with location as dependency
-    // https://jasonwatmore.com/react-router-v6-listen-to-location-route-change-without-history-listen
-    useEffect(() => {
-        if (location.hash) {
-            lastHash.current = location.hash.slice(1); // safe hash for further use after navigation
-        }
-
-        if (lastHash.current && document.getElementById(lastHash.current)) {
-            setTimeout(() => {
-                document
-                    .getElementById(lastHash.current)
-                    ?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: "start" });
-
-                lastHash.current = '';
-            }, 200);
-        }
-    }, [location]);
-
-    return null;
+export default function ScrollToAnchor() {
+  const location = useLocation();
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => {
+      if (location.hash) {
+        document.getElementById(location.hash.slice(1))?.scrollIntoView({ block: 'start' });
+      } else {
+        window.scrollTo(0, 0);
+      }
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [location]);
+  return null;
 }
-
-export default ScrollToAnchor;

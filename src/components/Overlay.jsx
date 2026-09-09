@@ -9,20 +9,20 @@ const Overlay = (props) => {
   };
 
   return (
-    <div onClick={handleClick} className="overlay">
+    <nav id="site-menu" aria-label="Main navigation" onClick={handleClick} className="overlay">
 
       <ul>
         <li> <Link to="/#section0">Home</Link></li>
         <li> <Link to="/film">Film</Link></li>
         <li><Link to="/stills">Stills</Link></li>
         <li><Link to="/#aboutme">About</Link></li>
-        <li><Link to="/#client">Contact</Link></li>
+        <li><Link to="/#contact">Contact</Link></li>
 
       </ul>
 
 
 
-    </div>
+    </nav>
   )
 }
 export default Overlay;

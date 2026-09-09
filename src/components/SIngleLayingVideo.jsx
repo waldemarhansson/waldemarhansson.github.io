@@ -1,3 +1,4 @@
+import BackgroundVideo from './BackgroundVideo';
 import ellineaVideo from "../assets/ELLINEA SHORT_03.mp4"
 import { createClient } from 'contentful';
 import { useEffect, useState } from "react";
@@ -26,7 +27,7 @@ const SingleLayingVideo = () => {
 
     <div className="laying-photogallery">
 
-      <video autoPlay loop muted playsInline src={vimeoVideo}></video>
+      <BackgroundVideo  loop muted playsInline src={vimeoVideo}></BackgroundVideo>
 
 
 

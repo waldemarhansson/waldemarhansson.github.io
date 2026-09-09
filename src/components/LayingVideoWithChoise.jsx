@@ -1,11 +1,12 @@
+import BackgroundVideo from './BackgroundVideo';
 
-const LayingVideoWithChoise = ({ video }) => {
+const LayingVideoWithChoise = ({ video, aspectRatio = '16 / 9' }) => {
 
     return (
 
-        <div className="laying-photogallery">
+        <div className="laying-photogallery" style={{ aspectRatio }}>
 
-            <video autoPlay loop muted playsInline src={video} ></video>
+            <BackgroundVideo  loop muted playsInline src={video} ></BackgroundVideo>
 
         </div>
     )

@@ -5,7 +5,7 @@ import '../App.css'
 const ImageComponent = () => {
     return (
         <div className="standing-image">
-            <img src={image} alt="" />
+            <img src={image} width="1920" height="1080" alt="" />
         </div>
     );
 };

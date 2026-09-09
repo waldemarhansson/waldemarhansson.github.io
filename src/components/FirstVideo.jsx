@@ -1,29 +1,26 @@
-import { useEffect, useState } from "react"
-import welove from '../assets/welove.png'
+import BackgroundVideo from './BackgroundVideo';
+import desktopLogo from '../assets/welove.png';
+import mobileLogo from '../assets/weloveMobile.png';
+import mobilePoster from '../assets/VST_DP_02.jpg';
+import desktopPoster from '../assets/SHOWREEL_2025_DP.jpg';
 
-const FirstVideo = ({ videoSource, logoSource }) => {
+const FirstVideo = ({ videoSource, isDesktop }) => (
+  <div className="firstVideo">
+    <BackgroundVideo
+      key={videoSource}
+      poster={isDesktop ? desktopPoster : mobilePoster}
+      className="video-element"
+      width={isDesktop ? 1920 : 1080}
+      height={isDesktop ? 1080 : 1920}
+      preload="metadata"
+      loop muted  playsInline
+      src={videoSource}
+    />
+    <img className="weLove-logo"
+      src={isDesktop ? desktopLogo : mobileLogo}
+      alt="We love visual storytelling"
+    />
+  </div>
+);
 
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth <= 768);
-
-  useEffect(() => {
-    function handleResize() {
-      setIsDesktop(window.innerWidth >= 768);
-    }
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  return (
-    <div className="firstVideo" >
-
-      <img className="weLove-logo" src={welove}></img>
-
-      <video poster={isDesktop ? "src/assets/VST_DP_02.jpg" : "src/assets/SHOWREEL_2025_DP.jpg"}
-        className="video-element" loop muted autoPlay playsInline src={videoSource} />
-    </div>
-
-  )
-}
-export default FirstVideo
+export default FirstVideo;
