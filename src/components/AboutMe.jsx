@@ -1,7 +1,7 @@
 import studiophoto from "../assets/Stills/recentStills/studio.jpg"
 
 const AboutMe = () => {
-  const email = "waldemar@waldemarhansson.com"
+  const email = "waldemar@visualstorytelling.se"
   const openMailProgram = () => {
     // You can use a mailto link to open the user's default mail program
     window.location.href = `mailto:${email}`;
